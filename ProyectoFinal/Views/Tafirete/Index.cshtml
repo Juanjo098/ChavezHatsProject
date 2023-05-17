@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Insertar">Insertar</a>
+    <a asp-action="Insertar">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -61,6 +61,6 @@
     const eliminar = (id) => {
         const form = document.getElementById('formEliminar')
         document.getElementById('idEliminar').value = id
-        confirmacion("Eliminar barbiquejo", "Desea eliminar el barbiquejo?", "Barbiquejo eliminado", form)
+        confirmacion("Eliminar tafirete", "Desea eliminar el tafierete?", "Tafirete eliminado", form)
     }
 </script>
