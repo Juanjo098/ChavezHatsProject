@@ -1,0 +1,45 @@
+﻿@model ProyectoFinal.Clases.Editar.SimpleEDIT
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<h4>SimpleEDIT</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar" id="form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="id" class="control-label">@Html.DisplayNameFor(model => model.id): @Model.id</label>
+                <input type="hidden" asp-for="id" class="form-control" />
+                <span asp-validation-for="id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nombre" class="control-label"></label>
+                <input asp-for="nombre" class="form-control" />
+                <span asp-validation-for="nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="button" value="Save" class="btn btn-primary" onclick="enviar()"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script src="~/js/alerts.js"></script>
+<script>
+    const enviar = () => {
+        const form = document.getElementById("form")
+        confirmacion("Editar forro", "Desea editar el forro?", "Forro editado", form)
+    }
+</script>
