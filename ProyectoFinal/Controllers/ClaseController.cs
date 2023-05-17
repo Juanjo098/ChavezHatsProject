@@ -45,8 +45,8 @@ namespace ProyectoFinal.Controllers
             {
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Modelo item = new Modelo { NomModelo = insert.nombre };
-                    db.Modelos.Add(item);
+                    Clase item = new Clase { NomClase = insert.nombre };
+                    db.Clases.Add(item);
                     db.SaveChanges();
                     return RedirectToAction("Index");
                 }
@@ -64,10 +64,10 @@ namespace ProyectoFinal.Controllers
             {
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Modelo item = db.Modelos.Find(id);
+                    Clase item = db.Clases.Find(id);
                     if (item != null)
                     {
-                        SimpleCONS cons = new SimpleCONS { id = item.IdModelo, nombre = item.NomModelo };
+                        SimpleCONS cons = new SimpleCONS { id = item.IdClase, nombre = item.NomClase };
                         return View(cons);
                     }
                     return RedirectToAction("Index");
@@ -86,10 +86,10 @@ namespace ProyectoFinal.Controllers
             {
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Modelo item = db.Modelos.Find(id);
+                    Clase item = db.Clases.Find(id);
                     if (item != null)
                     {
-                        SimpleEDIT cons = new SimpleEDIT { id = item.IdModelo, nombre = item.NomModelo };
+                        SimpleEDIT cons = new SimpleEDIT { id = item.IdClase, nombre = item.NomClase };
                         return View(cons);
                     }
                     return RedirectToAction("Index");
@@ -112,10 +112,10 @@ namespace ProyectoFinal.Controllers
                 }
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Modelo item = db.Modelos.Find(edit.id);
+                    Clase item = db.Clases.Find(edit.id);
                     if (item != null)
                     {
-                        item.NomModelo = edit.nombre;
+                        item.NomClase = edit.nombre;
                         db.SaveChanges();
                         return RedirectToAction("Index");
                     }
@@ -135,7 +135,7 @@ namespace ProyectoFinal.Controllers
             {
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Modelo item = db.Modelos.Find(id);
+                    Clase item = db.Clases.Find(id);
                     if (item != null)
                     {
                         item.Hab = false;
