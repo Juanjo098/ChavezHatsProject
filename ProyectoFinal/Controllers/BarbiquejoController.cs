@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using ProyectoFinal.Models;
 using ProyectoFinal.Clases.Editar;
+using Microsoft.AspNetCore.Mvc.Abstractions;
+using ProyectoFinal.Clases.Insertar;
 
 namespace ProyectoFinal.Controllers
 {
@@ -20,6 +22,34 @@ namespace ProyectoFinal.Controllers
                             select new SimpleCONS { id = item.IdBarbiquejo, nombre = item.NomBarbiquejo }
                         ).ToList();
                     return View(lista);
+                }
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        public IActionResult Insertar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Insertar(SimpleINST insert)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(insert);
+            }
+            try
+            {
+                using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
+                {
+                    Barbiquejo bar = new Barbiquejo {NomBarbiquejo = insert.nombre };
+                    db.Barbiquejos.Add(bar);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
                 }
             }
             catch (Exception ex)
