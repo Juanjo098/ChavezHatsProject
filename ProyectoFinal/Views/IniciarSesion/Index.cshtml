@@ -1,4 +1,4 @@
-﻿@model ProyectoFinal.Clases.Insertar.UsuarioINST
+﻿@model ProyectoFinal.Clases.Consultas.IniciarSesionCONS
 
 @{
     ViewData["Title"] = "Index";
@@ -6,17 +6,12 @@
 
 <h1>Index</h1>
 
-<h4>UsuarioINST</h4>
+<h4>IniciarSesionCONS</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Index">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="nombre" class="control-label"></label>
-                <input asp-for="nombre" class="form-control" />
-                <span asp-validation-for="nombre" class="text-danger"></span>
-            </div>
             <div class="form-group">
                 <label asp-for="correo" class="control-label"></label>
                 <input asp-for="correo" class="form-control" />
@@ -41,13 +36,12 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-
 <script src="~/js/alerts.js"></script>
 <script>
     const error = '@ViewBag.error'
     document.addEventListener("DOMContentLoaded", () => {
-        if (error != ''){
-            mesanjeError("Correo ya registrado", error)
+        if (error != '') {
+            mesanjeError("Error al iniciar sesión", "El correo y/o la contraseña no coinciden, intente de nuevo")
         }
     })
 </script>

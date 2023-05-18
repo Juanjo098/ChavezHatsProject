@@ -22,7 +22,7 @@ namespace ProyectoFinal.Controllers
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
                     if (db.Usuarios.FirstOrDefault(e => e.Correo == item.correo) != null) {
-                        ViewBag.error = "Ese correo ya se encuentra registrado, intente con otro.";
+                        ViewBag.error = "El correo: " + item.correo + " ya fue registrado, intente con otro.";
                         return View("Index");
                     } 
                     Usuario u = new Usuario
@@ -32,13 +32,15 @@ namespace ProyectoFinal.Controllers
                         Contrasena = item.contrasena,
                         IdTipoUsuario= ID_CLIENTE
                     };
+                    db.Usuarios.Add(u);
+                    db.SaveChanges();
 
                 }
                 return RedirectToAction("Index", "Home");
             }
             catch (Exception ex)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Error", "Home");
             }
         }
     }
