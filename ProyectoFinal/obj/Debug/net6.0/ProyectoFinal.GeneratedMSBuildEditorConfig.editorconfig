@@ -28,6 +28,42 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYmlxdWVqb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Barbiquejo/Insertar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYmlxdWVqb1xJbnNlcnRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Clase/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VcRGV0YWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Clase/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Clase/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Clase/Insertar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VcSW5zZXJ0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Forro/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ycm9cRGV0YWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Forro/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ycm9cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Forro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ycm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Forro/Insertar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ycm9cSW5zZXJ0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,12 +72,76 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Modelo/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXERldGFsbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Modelo/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Modelo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Modelo/Insertar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXEluc2VydGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Tafirete/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFmaXJldGVcRGV0YWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Tafirete/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFmaXJldGVcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Tafirete/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFmaXJldGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Tafirete/Insertar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFmaXJldGVcSW5zZXJ0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/TipoUsuario/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cRGV0YWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/TipoUsuario/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/TipoUsuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/TipoUsuario/Insertar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cSW5zZXJ0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Toquilla/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9xdWlsbGFcRGV0YWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Toquilla/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9xdWlsbGFcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Toquilla/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9xdWlsbGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Toquilla/Insertar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9xdWlsbGFcSW5zZXJ0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/_ViewImports.cshtml]

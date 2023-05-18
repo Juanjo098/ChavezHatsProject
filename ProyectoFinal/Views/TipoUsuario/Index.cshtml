@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Insertar" class="btn btn-success">Insertar</a>
+    <a asp-action="Insertar">Create New</a>
 </p>
 <form asp-action="Index" method="post" id="formBuscar" class="row">
     <div class="form-group col-10">
@@ -42,7 +42,7 @@
                     @Html.DisplayFor(modelItem => item.nombre)
                 </td>
                 <td>
-                    <a class="btn btn-light" id="detalles" onclick="detalles(@item.id)">
+                    <a class="btn btn-success" id="detalles" onclick="detalles(@item.id)">
                         <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
                     </a>
                     <a class="btn btn-warning" id="editar" onclick="editar(@item.id)">
@@ -71,6 +71,6 @@
     const eliminar = (id) => {
         const form = document.getElementById('formEliminar')
         document.getElementById('idEliminar').value = id
-        confirmacion("Eliminar barbiquejo", "Desea eliminar el barbiquejo?", "Barbiquejo eliminado", form)
+        confirmacion("Eliminar tipo de usuario", "Desea eliminar el tipo de usuario?", "Tipo de usuario eliminado", form)
     }
 </script>

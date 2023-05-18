@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Editar" method="post" id="form">
+        <form asp-action="Editar" id="form">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="id" class="control-label">@Html.DisplayNameFor(model => model.id): @Model.id</label>
@@ -40,6 +40,6 @@
 <script>
     const enviar = () => {
         const form = document.getElementById("form")
-        confirmacion("Editar barbiquejo", "Desea editar barbiquejo?", "Barbiquejo editado", form)
+        confirmacion("Insertar clase", "Desea insertar una nueva clase?", "Clase insertada", form)
     }
 </script>

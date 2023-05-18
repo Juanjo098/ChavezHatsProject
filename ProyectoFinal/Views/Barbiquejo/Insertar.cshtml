@@ -1,29 +1,24 @@
-﻿@model ProyectoFinal.Clases.Editar.SimpleEDIT
+﻿@model ProyectoFinal.Clases.Insertar.SimpleINST
 
 @{
-    ViewData["Title"] = "Editar";
+    ViewData["Title"] = "Insertar";
 }
 
-<h1>Editar</h1>
+<h1>Insertar</h1>
 
-<h4>SimpleEDIT</h4>
+<h4>SimpleINST</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Editar" method="post" id="form">
+        <form asp-action="Insertar" id="form">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="id" class="control-label">@Html.DisplayNameFor(model => model.id): @Model.id</label>
-                <input type="hidden" asp-for="id" class="form-control" />
-                <span asp-validation-for="id" class="text-danger"></span>
-            </div>
             <div class="form-group">
                 <label asp-for="nombre" class="control-label"></label>
                 <input asp-for="nombre" class="form-control" />
                 <span asp-validation-for="nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="button" value="Save" class="btn btn-primary" onclick="enviar()"/>
+                <input type="button" value="Insertar" class="btn btn-primary" onclick="insertar()" />
             </div>
         </form>
     </div>
@@ -40,6 +35,6 @@
 <script>
     const enviar = () => {
         const form = document.getElementById("form")
-        confirmacion("Editar barbiquejo", "Desea editar barbiquejo?", "Barbiquejo editado", form)
+        confirmacion("Insertar barbiquejo", "Desea insertar un nuevo barbiquejo?", "Barbiquejo insertado", form)
     }
 </script>

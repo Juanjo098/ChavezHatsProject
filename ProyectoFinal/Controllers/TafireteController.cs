@@ -1,13 +1,12 @@
-﻿using ProyectoFinal.Clases.Consultas;
-using Microsoft.AspNetCore.Mvc;
-using ProyectoFinal.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using ProyectoFinal.Clases.Consultas;
 using ProyectoFinal.Clases.Editar;
-using Microsoft.AspNetCore.Mvc.Abstractions;
 using ProyectoFinal.Clases.Insertar;
+using ProyectoFinal.Models;
 
 namespace ProyectoFinal.Controllers
 {
-    public class BarbiquejoController : Controller
+    public class TafireteController : Controller
     {
         public IActionResult Index()
         {
@@ -17,9 +16,9 @@ namespace ProyectoFinal.Controllers
                 {
                     List<SimpleCONS> lista = new List<SimpleCONS>();
                     lista = (
-                            from item in db.Barbiquejos
+                            from item in db.Tafiletes
                             where item.Hab == true
-                            select new SimpleCONS { id = item.IdBarbiquejo, nombre = item.NomBarbiquejo }
+                            select new SimpleCONS { id = item.IdTafiletes, nombre = item.NomTafiletes }
                         ).ToList();
                     return View(lista);
                 }
@@ -40,9 +39,9 @@ namespace ProyectoFinal.Controllers
                 {
                     List<SimpleCONS> list = new List<SimpleCONS>();
                     list = (
-                            from item in db.Barbiquejos
+                            from item in db.Tafiletes
                             where item.Hab == true
-                            select new SimpleCONS { id = item.IdBarbiquejo, nombre = item.NomBarbiquejo }
+                            select new SimpleCONS { id = item.IdTafiletes, nombre = item.NomTafiletes }
                         ).ToList();
                     if (String.IsNullOrEmpty(busqueda))
                     {
@@ -74,8 +73,8 @@ namespace ProyectoFinal.Controllers
             {
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Barbiquejo bar = new Barbiquejo {NomBarbiquejo = insert.nombre };
-                    db.Barbiquejos.Add(bar);
+                    Tafilete item = new Tafilete { NomTafiletes = insert.nombre };
+                    db.Tafiletes.Add(item);
                     db.SaveChanges();
                     return RedirectToAction("Index");
                 }
@@ -93,10 +92,10 @@ namespace ProyectoFinal.Controllers
             {
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Barbiquejo item = db.Barbiquejos.Find(id);
+                    Tafilete item = db.Tafiletes.Find(id);
                     if (item != null)
                     {
-                        SimpleCONS cons = new SimpleCONS { id = item.IdBarbiquejo, nombre = item.NomBarbiquejo };
+                        SimpleCONS cons = new SimpleCONS { id = item.IdTafiletes, nombre = item.NomTafiletes };
                         return View(cons);
                     }
                     return RedirectToAction("Index");
@@ -115,10 +114,10 @@ namespace ProyectoFinal.Controllers
             {
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Barbiquejo item = db.Barbiquejos.Find(id);
+                    Tafilete item = db.Tafiletes.Find(id);
                     if (item != null)
                     {
-                        SimpleEDIT cons = new SimpleEDIT { id = item.IdBarbiquejo, nombre = item.NomBarbiquejo };
+                        SimpleEDIT cons = new SimpleEDIT { id = item.IdTafiletes, nombre = item.NomTafiletes };
                         return View(cons);
                     }
                     return RedirectToAction("Index");
@@ -141,10 +140,10 @@ namespace ProyectoFinal.Controllers
                 }
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Barbiquejo item = db.Barbiquejos.Find(edit.id);
+                    Tafilete item = db.Tafiletes.Find(edit.id);
                     if (item != null)
                     {
-                        item.NomBarbiquejo = edit.nombre;
+                        item.NomTafiletes = edit.nombre;
                         db.SaveChanges();
                         return RedirectToAction("Index");
                     }
@@ -164,7 +163,7 @@ namespace ProyectoFinal.Controllers
             {
                 using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
                 {
-                    Barbiquejo item = db.Barbiquejos.Find(id);
+                    Tafilete item = db.Tafiletes.Find(id);
                     if (item != null)
                     {
                         item.Hab = false;
@@ -177,7 +176,6 @@ namespace ProyectoFinal.Controllers
             {
                 return RedirectToAction("Index");
             }
-            return RedirectToAction("Index");
         }
     }
 }
