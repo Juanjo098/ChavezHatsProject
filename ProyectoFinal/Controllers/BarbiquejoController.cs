@@ -30,6 +30,34 @@ namespace ProyectoFinal.Controllers
             }
         }
 
+        [HttpPost]
+        public IActionResult Index(string busqueda)
+        {
+            try
+            {
+                ViewBag.busqueda = busqueda;
+                using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
+                {
+                    List<SimpleCONS> list = new List<SimpleCONS>();
+                    list = (
+                            from item in db.Barbiquejos
+                            where item.Hab == true
+                            select new SimpleCONS { id = item.IdBarbiquejo, nombre = item.NomBarbiquejo }
+                        ).ToList();
+                    if (String.IsNullOrEmpty(busqueda))
+                    {
+                        return View(list);
+                    }
+                    list = list.FindAll(item => item.nombre.ToUpper().Contains(busqueda.ToUpper()));
+                    return View(list);
+                }
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
         public IActionResult Insertar()
         {
             return View();
