@@ -13,3 +13,8 @@ const limpiar = () => {
     document.getElementById('busqueda').value = ""
     document.getElementById('formBuscar').submit()
 }
+
+const lista = () => {
+    document.getElementById('formBuscar').submit()
+}
+
