@@ -1,8 +1,116 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<head>
+    <style>
 
+        .producto {
+            width: 940px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+            .producto li {
+                display: inline-block;
+                text-align: center;
+                width: 26%;
+                vertical-align: top;
+                margin: 0 1.5%;
+                padding: 30px 20px;
+                box-sizing: border-box;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+
+            .producto h2 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .producto li:hover {
+                border-color: #c78c19;
+            }
+
+                .producto li:hover h2 {
+                    font-size: 33px;
+                }
+
+            .producto li:active {
+                border-color: green;
+            }
+
+        .producto-pre {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+
+
+
+        .titulo-principal {
+            text-align: center;
+            font-size: 2em;
+            margin: 0 0 1em;
+            clear: left;
+            color: #000000;
+            text-shadow: 2px 2px darkgray;
+        }
+
+    </style>
+
+
+</head>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <main>
+        <ul class="producto">
+            <li>
+
+                <h2> Sombreros </h2>
+                <img src="img/barba.jpg">
+                <p class="producto-des"> Sombrero Palma</p>
+                <p class="producto-pre"> $15 </p>
+
+            </li>
+
+            <li>
+
+                <h2> Sombreros </h2>
+                <img src="img/barba.jpg">
+                <p class="producto-des"> Sombrero Palma</p>
+                <p class="producto-pre"> $15 </p>
+
+            </li>
+            <li>
+
+                <h2> Sombreros </h2>
+                <img src="img/barba.jpg">
+                <p class="producto-des"> Sombrero Palma</p>
+                <p class="producto-pre"> $15 </p>
+
+            </li>
+
+        </ul>
+    </main>
 </div>
+
+<section class="mapa">
+    <h3 class="titulo-principal">Nuestra hubicacion</h3>
+    <p>Nuestro establecimiento esta ubicado en el corazon de la ciudad</p>
+    <div class="mapa-contenido">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4498404748983!2d-46.63452058507005!3d-23.588194784669614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses-419!2smx!4v1674669813691!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
