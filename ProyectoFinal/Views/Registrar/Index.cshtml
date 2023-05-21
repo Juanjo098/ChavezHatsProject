@@ -3,12 +3,25 @@
 @{
     ViewData["Title"] = "Index";
 }
+<head>
+    <style>
+       .solid {
+            border-style: solid;
+            border-width: medium;
+               padding: 38px;
+        }
+    </style>
+</head>
 
+<div class="solid">
 <h1>Index</h1>
 
 <h4>UsuarioINST</h4>
 <hr />
-<div class="row">
+
+    <div class="row" ">
+    
+
     <div class="col-md-4">
         <form asp-action="Index">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -38,6 +51,7 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+</div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
