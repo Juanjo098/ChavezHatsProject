@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         
-
+        .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            margin: -9px 0 -8px 0px;
+            background-color: #d4d4d4;
+            justify-content: space-between;
+        }
         /*:::::Foother Modificar*/
         .pie-pagina {
             width: 100%;
@@ -91,6 +98,11 @@
                     font-size: 15px;
                 }
                 div.solid {border-style: solid;}
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
     </style>
 
 </head>
@@ -125,6 +137,14 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Clase" asp-action="Index">Clase</a>
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Index">Usuarios</a>
                                 <a class="nav-link text-dark" asp-area="" asp-controller="TipoUsuario" asp-action="Index">Tipos de usuarios</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tablas complicadas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Material" asp-action="Index">Materiales</a>
                             </ul>
                         </li>
                         <li class="nav-item">

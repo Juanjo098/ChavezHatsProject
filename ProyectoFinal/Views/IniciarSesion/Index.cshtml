@@ -4,9 +4,66 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-<h4>IniciarSesionCONS</h4>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Slabo+27px&display=swap" rel="stylesheet">
+
+    <style>
+        .main.pb-3 {
+            border-style: solid;
+            border-width: medium;
+            padding: 38px 38px 32px;
+        }
+
+        }
+
+       
+        .container {
+            max-width: 715px;
+        }
+       
+         body {
+            background-color: #c99e6b;
+        }
+        input.btn.btn-primary {
+            width: 117px;
+            padding: 7px;
+            margin: 13px 0 10px;
+            height: 39px;
+            background-color:black;
+        }
+        h4{
+            font-family: 'Slabo 27px', serif;
+            font-size: 35px;
+            height: 29px;
+        }
+
+        .container {
+            padding: 0 300px 0px 300px;
+        }
+
+        .col-md-4 {
+            width: 72.333333%;
+            padding: 0px 0px 0 109px;
+        }
+
+        main.pb-3 {
+            border-style: solid;
+            border-style: solid;
+            border-width: medium;
+            padding: 38px 38px 32px;
+            margin: 3px 0px 10px 0px;
+            background-color: wheat;
+        
+
+        }
+    </style>
+</head>
+
+
+<h4>Iniciar Sesion</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -29,9 +86,7 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

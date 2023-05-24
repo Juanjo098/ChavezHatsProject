@@ -4,19 +4,62 @@
     ViewData["Title"] = "Index";
 }
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Slabo+27px&display=swap" rel="stylesheet">
+
     <style>
        .solid {
             border-style: solid;
             border-width: medium;
-               padding: 38px;
+            padding: 38px 38px 32px;
         }
+
+        }
+
+        .container {
+            max-width: 715px;
+        }
+       
+
+        input.btn.btn-primary {
+            width: 117px;
+            padding: 7px;
+            margin: 13px 0 10px;
+            height: 39px;
+            background-color: black;
+        }
+        h4{
+            font-family: 'Slabo 27px', serif;
+            font-size: 35px;
+            height: 29px;
+        }
+
+        .container {
+            padding: 0 300px 0px 300px;
+        }
+
+        .col-md-4 {
+            width: 72.333333%;
+            padding: 0px 0px 0 109px;
+        }
+
+        div.solid {
+            border-style: solid;
+            background-color: wheat;
+        }
+
+        body {
+            background-color: #c99e6b;
+        }
+
     </style>
 </head>
 
 <div class="solid">
-<h1>Index</h1>
 
-<h4>UsuarioINST</h4>
+
+<h4>Registrarse</h4>
 <hr />
 
     <div class="row" ">
@@ -24,37 +67,39 @@
 
     <div class="col-md-4">
         <form asp-action="Index">
+            
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="nombre" class="control-label"></label>
+                <label asp-for="nombre" class="control-label">Nombre</label>
                 <input asp-for="nombre" class="form-control" />
                 <span asp-validation-for="nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="correo" class="control-label"></label>
+                    <label asp-for="correo" class="control-label">Correo</label>
                 <input asp-for="correo" class="form-control" />
                 <span asp-validation-for="correo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="contrasena" class="control-label"></label>
+                    <label asp-for="contrasena" class="control-label">Contrasena</label>
                 <input asp-for="contrasena" class="form-control" />
                 <span asp-validation-for="contrasena" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Registrarse" class="btn btn-primary" />
             </div>
+        
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 </div>
+
+
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
 
 <script src="~/js/alerts.js"></script>
 <script>

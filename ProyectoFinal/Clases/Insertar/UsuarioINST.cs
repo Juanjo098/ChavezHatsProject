@@ -14,7 +14,6 @@ namespace ProyectoFinal.Clases.Insertar
         [Display(Name ="Contraseña")]
         [Required(ErrorMessage ="Este campo no puede quedar vacío")]
         [StringLength(16, MinimumLength =8, ErrorMessage ="La contraseña debe contener entre 8 y 6 caracteres")]
-        [DataType(DataType.Password)]
         public string contrasena { get; set; }
     }
 }
