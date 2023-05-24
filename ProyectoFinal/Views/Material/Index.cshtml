@@ -1,0 +1,96 @@
+﻿@model IEnumerable<ProyectoFinal.Clases.Consultas.MaterialCONS>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Insertar" class="btn btn-success">Insertar</a>
+</p>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.toquilla)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.forro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.barbiquejo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tafiretes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ojitos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.resorte)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.toquilla)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.forro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.barbiquejo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tafiretes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ojitos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.resorte)
+                </td>
+                <td>
+                    <a class="btn btn-light" id="detalles" onclick="detalles(@item.id)">
+                        <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="btn btn-warning" id="editar" onclick="editar(@item.id)">
+                        <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="btn btn-danger" id="eliminar" onclick="eliminar(@item.id)">
+                        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<form asp-action="Detalles" id="formDetalles" method="post">
+    <input type="hidden" name="id" id="idDetalles">
+</form>
+<form asp-action="Editar" id="formEditar" method="get">
+    <input type="hidden" name="id" id="idEditar">
+</form>
+<form asp-action="Eliminar" id="formEliminar" method="post">
+    <input type="hidden" name="id" id="idEliminar">
+</form>
+<script src="~/js/gestion.js"></script>
+<script src="~/js/alerts.js"></script>
+<script>
+    const eliminar = (id) => {
+        const form = document.getElementById('formEliminar')
+        document.getElementById('idEliminar').value = id
+        confirmacion("Eliminar material", "Desea eliminar el material?", "Material eliminado", form)
+    }
+</script>

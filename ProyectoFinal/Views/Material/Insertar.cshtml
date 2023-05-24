@@ -1,0 +1,108 @@
+﻿@model ProyectoFinal.Clases.Insertar.MaterialINST
+
+@{
+    ViewData["Title"] = "Insertar";
+    List<SelectListItem> toquillas = ViewBag.toquillas;
+    List<SelectListItem> forros = ViewBag.forros;
+    List<SelectListItem> barbiquelos = ViewBag.barbiquejos;
+    List<SelectListItem> tafiretes = ViewBag.tafiretes;
+    int toquilla = ViewBag.toquilla == null ? 0 : ViewBag.toquilla;
+    int forro = ViewBag.forro == null ? 0 : ViewBag.forro;
+    int barbiquejo = ViewBag.barbiquejo == null ? 0 : ViewBag.barbiquejo;
+    int tafirete = ViewBag.tafirete == null ? 0 : ViewBag.tafirete;
+    int ojillos = 0;
+    int resorte = 0;
+
+    if (ViewBag.ojillos == null)
+        ojillos = 0;
+    else if (ViewBag.ojillos.ToString() == "False")
+        ojillos = 0;
+    else if (ViewBag.ojillos.ToString() == "True")
+        ojillos = 1;
+    else
+        ojillos = 0;
+
+
+    if (ViewBag.resorte == null)
+        resorte = 0;
+    else if (ViewBag.resorte.ToString() == "False")
+        resorte = 0;
+    else if (ViewBag.resorte.ToString() == "True")
+        resorte = 1;
+    else
+        resorte = 0;
+
+}
+
+<h1>Insertar</h1>
+
+<h4>MaterialINST</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Insertar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idToquilla" class="control-label"></label>
+                <select asp-for="idToquilla" asp-items="@toquillas" class="form-select" id="toquilla"></select>
+                <span asp-validation-for="idToquilla" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idForro" class="control-label"></label>
+                <select asp-for="idForro" asp-items="@forros" class="form-select" id="forro"></select>
+                <span asp-validation-for="idForro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idBarbiquejo" class="control-label"></label>
+                <select asp-for="idBarbiquejo" asp-items="@barbiquelos" class="form-select" id="barbiquejo"></select>
+                <span asp-validation-for="idBarbiquejo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idTafirete" class="control-label"></label>
+                <select asp-for="idTafirete" asp-items="@tafiretes" class="form-select" id="tafirete"></select>
+                <span asp-validation-for="idTafirete" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ojillos" id="ojillos" /> @Html.DisplayNameFor(model => model.ojillos)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="resorte" id="resorte" /> @Html.DisplayNameFor(model => model.resorte)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<script src="~/js/alerts.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const error = '@ViewBag.error'
+        const ojillo = @ojillos
+        const resorte = @resorte
+        if (error != '') {
+            document.getElementById("toquilla").value = @toquilla
+            document.getElementById("forro").value = @forro
+            document.getElementById("barbiquejo").value = @barbiquejo
+            document.getElementById("tafirete").value = @tafirete
+            document.getElementById("ojillos").checked = ojillo == 0 ? false : true;
+            document.getElementById("resorte").checked = resorte == 0 ? false : true;
+            mesanjeError("Error al insertar", "Ya hay un material con esas características")
+        }
+    })
+</script>
