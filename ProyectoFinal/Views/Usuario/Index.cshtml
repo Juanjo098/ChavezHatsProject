@@ -2,25 +2,16 @@
 
 @{
     ViewData["Title"] = "Index";
-    List<SelectListItem> tipoUsuarios = ViewBag.tipoUsuarios;
-    int idTipoUsuario = ViewBag.idTipoUsuario != null ? ViewBag.idTipoUsuario : 0;
 }
 
 <h1>Index</h1>
 <!--
 <p>
-    <a asp-action="Create">Create New</a>hgg
+    <a asp-action="Create">Create New</a>
 </p>
 -->
-<form asp-action="Index" class="form" method="post" id="formBuscar">
-    <div class="form-group">
-        <label class="form-label">Tipo de usuario</label>
-        <select asp-items="@tipoUsuarios" name="busqueda" id="busqueda"></select>
-    </div>
-    <div class="form-group">
-        <button type="submit">Filtrar</button>
-        <button type="button" onclick="deseleccionar()">Limpar</button>
-    </div>
+<form asp-action="Index" method="post">
+
 </form>
 <table class="table">
     <thead>
@@ -77,28 +68,3 @@
         }
     </tbody>
 </table>
-<form asp-action="Detalles" id="formDetalles" method="post">
-    <input type="hidden" name="id" id="idDetalles">
-</form>
-<form asp-action="Editar" id="formEditar" method="get">
-    <input type="hidden" name="id" id="idEditar">
-</form>
-<form asp-action="Eliminar" id="formEliminar" method="post">
-    <input type="hidden" name="id" id="idEliminar">
-</form>
-<script src="~/js/gestion.js"></script>
-<script src="~/js/alerts.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("busqueda").value = @idTipoUsuario
-    })
-    const eliminar = (id) => {
-        const form = document.getElementById('formEliminar')
-        document.getElementById('idEliminar').value = id
-        confirmacion("Eliminar al usuario", "Desea eliminar al usuario?", "Usuario eliminado", form)
-    }
-    const deseleccionar = () => {
-        document.getElementById("busqueda").value = 0
-        document.getElementById("formBuscar").submit()
-    }
-</script>

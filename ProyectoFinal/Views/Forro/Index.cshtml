@@ -4,22 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<head>
-    <style>
-        table {
-            border: 1px solid;
-        }
+<h1>Index</h1>
 
-        .separado {
-            padding: 16px;
-        }
-    </style>
-</head>
-
-<body>
-    <p>
-
-    </p>
+<p>
+    <a asp-action="Insertar">Create New</a>
+</p>
 <form asp-action="Index" method="post" id="formBuscar" class="row">
     <div class="form-group col-10">
         <label class="form-label">Buscar:</label>
@@ -30,11 +19,6 @@
         <button type="button" class="btn btn-secondary" onclick="limpiar()">Limpiar</button>
     </div>
 </form>
-    <h1 class="separado"></h1>
-<p>
-    <a asp-action="Insertar">Create New</a>
-</p>
-    <h1 class="separado"></h1>
 <table class="table">
     <thead>
         <tr>
@@ -81,8 +65,6 @@
 <form asp-action="Eliminar" id="formEliminar" method="post">
     <input type="hidden" name="id" id="idEliminar">
 </form>
-
-</body>
 <script src="~/js/gestion.js"></script>
 <script src="~/js/alerts.js"></script>
 <script>
