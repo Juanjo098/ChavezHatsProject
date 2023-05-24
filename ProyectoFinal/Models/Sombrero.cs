@@ -9,7 +9,7 @@ namespace ProyectoFinal.Models
         public int IdModelo { get; set; }
         public int IdClase { get; set; }
         public int IdMaterial { get; set; }
-        public int IdTalla { get; set; }
+        public int IdTamTalla { get; set; }
         public double MedFalda { get; set; }
         public decimal Precio { get; set; }
         public int? Stock { get; set; }
@@ -20,6 +20,6 @@ namespace ProyectoFinal.Models
         public virtual Clase IdClaseNavigation { get; set; } = null!;
         public virtual Material IdMaterialNavigation { get; set; } = null!;
         public virtual Modelo IdModeloNavigation { get; set; } = null!;
-        public virtual Talla IdTallaNavigation { get; set; } = null!;
+        public virtual TamanoTalla IdTamTallaNavigation { get; set; } = null!;
     }
 }

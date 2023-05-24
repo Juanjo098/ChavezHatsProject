@@ -16,12 +16,35 @@ namespace ProyectoFinal.Controllers
 
         public IActionResult Index()
         {
+            fillToquillaDropdown(false);
+            fillForroDropdown(false);
+            fillBarbiquejoDropdown(false);
+            fillTafiretesDropdown(false);
             List<MaterialCONS> lista = getMaterialsList();
 
             if (lista == null)
                 return RedirectToAction("Error", "Index");
 
             return View(lista);
+        }
+
+        [HttpPost]
+        public IActionResult Index(MaterialCONS item)
+        {
+            fillToquillaDropdown(false);
+            fillForroDropdown(false);
+            fillBarbiquejoDropdown(false);
+            fillTafiretesDropdown(false);
+            ViewBag.toquilla = item.idToquilla;
+            ViewBag.forro = item.idForro;
+            ViewBag.barbiquejo = item.idBarbiquejo;
+            ViewBag.tafirete = item.idTafiretes;
+            List<MaterialCONS> lista = getMaterialsList();
+
+            if (lista == null)
+                return RedirectToAction("Error", "Index");
+
+            return View(lista.FindAll(e => e.Comparar(item)));
         }
 
         public IActionResult Insertar()

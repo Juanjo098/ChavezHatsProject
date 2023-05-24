@@ -7,7 +7,6 @@ namespace ProyectoFinal.Models
     {
         public Talla()
         {
-            Sombreros = new HashSet<Sombrero>();
             TamanoTallas = new HashSet<TamanoTalla>();
         }
 
@@ -15,7 +14,6 @@ namespace ProyectoFinal.Models
         public string? NomTalla { get; set; }
         public bool? Hab { get; set; }
 
-        public virtual ICollection<Sombrero> Sombreros { get; set; }
         public virtual ICollection<TamanoTalla> TamanoTallas { get; set; }
     }
 }

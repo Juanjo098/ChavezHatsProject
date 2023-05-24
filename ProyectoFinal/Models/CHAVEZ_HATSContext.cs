@@ -47,11 +47,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Barbiquejo>(entity =>
             {
                 entity.HasKey(e => e.IdBarbiquejo)
-                    .HasName("PK__BARBIQUE__79D980F9C8FBF94E");
+                    .HasName("PK__BARBIQUE__79D980F9244853DD");
 
                 entity.ToTable("BARBIQUEJO");
 
-                entity.HasIndex(e => e.NomBarbiquejo, "UQ__BARBIQUE__7B02ABAD798CFF3F")
+                entity.HasIndex(e => e.NomBarbiquejo, "UQ__BARBIQUE__7B02ABADC172EEF5")
                     .IsUnique();
 
                 entity.Property(e => e.IdBarbiquejo).HasColumnName("ID_BARBIQUEJO");
@@ -69,11 +69,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Clase>(entity =>
             {
                 entity.HasKey(e => e.IdClase)
-                    .HasName("PK__CLASE__38C14A3EBBF9C176");
+                    .HasName("PK__CLASE__38C14A3EF7BE0619");
 
                 entity.ToTable("CLASE");
 
-                entity.HasIndex(e => e.NomClase, "UQ__CLASE__872CDD1CD3520235")
+                entity.HasIndex(e => e.NomClase, "UQ__CLASE__872CDD1C47E48882")
                     .IsUnique();
 
                 entity.Property(e => e.IdClase).HasColumnName("ID_CLASE");
@@ -91,11 +91,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Forro>(entity =>
             {
                 entity.HasKey(e => e.IdForro)
-                    .HasName("PK__FORRO__278A63787A1C61CC");
+                    .HasName("PK__FORRO__278A6378E7CCF12F");
 
                 entity.ToTable("FORRO");
 
-                entity.HasIndex(e => e.NomForro, "UQ__FORRO__A0AEF9A8B1EC5D53")
+                entity.HasIndex(e => e.NomForro, "UQ__FORRO__A0AEF9A8D2E84C42")
                     .IsUnique();
 
                 entity.Property(e => e.IdForro).HasColumnName("ID_FORRO");
@@ -113,11 +113,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<InfoEnvio>(entity =>
             {
                 entity.HasKey(e => e.IdInfoEnvio)
-                    .HasName("PK__INFO_ENV__095C85CAE6765BF5");
+                    .HasName("PK__INFO_ENV__095C85CAA86038E1");
 
                 entity.ToTable("INFO_ENVIO");
 
-                entity.HasIndex(e => e.IdUsuario, "UQ__INFO_ENV__91136B9145270AA1")
+                entity.HasIndex(e => e.IdUsuario, "UQ__INFO_ENV__91136B91DACE347C")
                     .IsUnique();
 
                 entity.Property(e => e.IdInfoEnvio).HasColumnName("ID_INFO_ENVIO");
@@ -178,7 +178,7 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Material>(entity =>
             {
                 entity.HasKey(e => e.IdMaterial)
-                    .HasName("PK__MATERIAL__B47FC5A357DCB3F8");
+                    .HasName("PK__MATERIAL__B47FC5A321F33E86");
 
                 entity.ToTable("MATERIAL");
 
@@ -229,11 +229,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Modelo>(entity =>
             {
                 entity.HasKey(e => e.IdModelo)
-                    .HasName("PK__MODELO__26C704A02AD494A2");
+                    .HasName("PK__MODELO__26C704A0947E0DFB");
 
                 entity.ToTable("MODELO");
 
-                entity.HasIndex(e => e.NomModelo, "UQ__MODELO__9934385521648526")
+                entity.HasIndex(e => e.NomModelo, "UQ__MODELO__993438556CE51B0A")
                     .IsUnique();
 
                 entity.Property(e => e.IdModelo).HasColumnName("ID_MODELO");
@@ -251,7 +251,7 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Sombrero>(entity =>
             {
                 entity.HasKey(e => e.IdSombrero)
-                    .HasName("PK__SOMBRERO__ADD0DAA87935EE1C");
+                    .HasName("PK__SOMBRERO__ADD0DAA844296122");
 
                 entity.ToTable("SOMBRERO");
 
@@ -267,7 +267,7 @@ namespace ProyectoFinal.Models
 
                 entity.Property(e => e.IdModelo).HasColumnName("ID_MODELO");
 
-                entity.Property(e => e.IdTalla).HasColumnName("ID_TALLA");
+                entity.Property(e => e.IdTamTalla).HasColumnName("ID_TAM_TALLA");
 
                 entity.Property(e => e.Imagen)
                     .HasMaxLength(64)
@@ -307,21 +307,21 @@ namespace ProyectoFinal.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__SOMBRERO__ID_MOD__48CFD27E");
 
-                entity.HasOne(d => d.IdTallaNavigation)
+                entity.HasOne(d => d.IdTamTallaNavigation)
                     .WithMany(p => p.Sombreros)
-                    .HasForeignKey(d => d.IdTalla)
+                    .HasForeignKey(d => d.IdTamTalla)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__SOMBRERO__ID_TAL__4BAC3F29");
+                    .HasConstraintName("FK__SOMBRERO__ID_TAM__4BAC3F29");
             });
 
             modelBuilder.Entity<Tafilete>(entity =>
             {
                 entity.HasKey(e => e.IdTafiletes)
-                    .HasName("PK__TAFILETE__5639FF24092D52E9");
+                    .HasName("PK__TAFILETE__5639FF24D17B5461");
 
                 entity.ToTable("TAFILETES");
 
-                entity.HasIndex(e => e.NomTafiletes, "UQ__TAFILETE__1B73DCE2DD46B6D8")
+                entity.HasIndex(e => e.NomTafiletes, "UQ__TAFILETE__1B73DCE2AD966564")
                     .IsUnique();
 
                 entity.Property(e => e.IdTafiletes).HasColumnName("ID_TAFILETES");
@@ -339,11 +339,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Talla>(entity =>
             {
                 entity.HasKey(e => e.IdTalla)
-                    .HasName("PK__TALLA__6E1990BE652BAC77");
+                    .HasName("PK__TALLA__6E1990BE03409527");
 
                 entity.ToTable("TALLA");
 
-                entity.HasIndex(e => e.NomTalla, "UQ__TALLA__7995DCB924672FBD")
+                entity.HasIndex(e => e.NomTalla, "UQ__TALLA__7995DCB98D7A00FA")
                     .IsUnique();
 
                 entity.Property(e => e.IdTalla).HasColumnName("ID_TALLA");
@@ -361,11 +361,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<TamanoTalla>(entity =>
             {
                 entity.HasKey(e => e.IdTamTalla)
-                    .HasName("PK__TAMANO_T__176978DD779E7A9D");
+                    .HasName("PK__TAMANO_T__176978DD6DA37F01");
 
                 entity.ToTable("TAMANO_TALLA");
 
-                entity.HasIndex(e => e.TamTalla, "UQ__TAMANO_T__E1CB43A19095E9ED")
+                entity.HasIndex(e => e.TamTalla, "UQ__TAMANO_T__E1CB43A1BAF7EF34")
                     .IsUnique();
 
                 entity.Property(e => e.IdTamTalla).HasColumnName("ID_TAM_TALLA");
@@ -388,11 +388,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<TiposUsario>(entity =>
             {
                 entity.HasKey(e => e.IdTipoUsuario)
-                    .HasName("PK__TIPOS_US__85A05968861D2159");
+                    .HasName("PK__TIPOS_US__85A059685DA16055");
 
                 entity.ToTable("TIPOS_USARIO");
 
-                entity.HasIndex(e => e.NomTipoUsuario, "UQ__TIPOS_US__293F21167A8B112D")
+                entity.HasIndex(e => e.NomTipoUsuario, "UQ__TIPOS_US__293F21162C5FD074")
                     .IsUnique();
 
                 entity.Property(e => e.IdTipoUsuario).HasColumnName("ID_TIPO_USUARIO");
@@ -410,11 +410,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Toquilla>(entity =>
             {
                 entity.HasKey(e => e.IdToquilla)
-                    .HasName("PK__TOQUILLA__F36A34C338E1CB15");
+                    .HasName("PK__TOQUILLA__F36A34C32AA20959");
 
                 entity.ToTable("TOQUILLA");
 
-                entity.HasIndex(e => e.NomToquilla, "UQ__TOQUILLA__509DBBF442B94A8A")
+                entity.HasIndex(e => e.NomToquilla, "UQ__TOQUILLA__509DBBF4D15228B6")
                     .IsUnique();
 
                 entity.Property(e => e.IdToquilla).HasColumnName("ID_TOQUILLA");
@@ -432,11 +432,11 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)
-                    .HasName("PK__USUARIO__91136B90E6191D8E");
+                    .HasName("PK__USUARIO__91136B90CE5B520B");
 
                 entity.ToTable("USUARIO");
 
-                entity.HasIndex(e => e.Correo, "UQ__USUARIO__264F33C854775EE2")
+                entity.HasIndex(e => e.Correo, "UQ__USUARIO__264F33C8E93AECD3")
                     .IsUnique();
 
                 entity.Property(e => e.IdUsuario).HasColumnName("ID_USUARIO");
@@ -527,7 +527,7 @@ namespace ProyectoFinal.Models
             modelBuilder.Entity<Ventum>(entity =>
             {
                 entity.HasKey(e => e.IdVenta)
-                    .HasName("PK__VENTA__F3B6C1B462133025");
+                    .HasName("PK__VENTA__F3B6C1B45A753F81");
 
                 entity.ToTable("VENTA");
 

@@ -28,5 +28,14 @@ namespace ProyectoFinal.Clases.Consultas
         public int idBarbiquejo { get; set; }
         [ScaffoldColumn(false)]
         public int idTafiretes { get; set; }
+
+        public bool Comparar(MaterialCONS item)
+        {
+            if (item.idToquilla != 0 && item.idToquilla != idToquilla) return false;
+            if (item.idForro != 0 && item.idForro != idForro) return false;
+            if (item.idBarbiquejo != 0 && item.idBarbiquejo != idBarbiquejo) return false;
+            if (item.idTafiretes != 0 && item.idTafiretes != idTafiretes) return false;
+            return true;
+        }
     }
 }
