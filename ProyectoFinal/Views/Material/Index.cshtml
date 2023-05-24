@@ -140,15 +140,11 @@
 <script src="~/js/alerts.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        console.log(@toquilla)
-        console.log(@forro)
-        console.log(@barbiquejo)
-        console.log(@tafirete)
         document.getElementById('idToquilla').value = @toquilla
-            document.getElementById('idForro').value = @forro
-                document.getElementById('idBarbiquejo').value = @barbiquejo
-                    document.getElementById('idTafiretes').value = @tafirete
-        })
+        document.getElementById('idForro').value = @forro
+        document.getElementById('idBarbiquejo').value = @barbiquejo
+        document.getElementById('idTafiretes').value = @tafirete
+     })
 
     const eliminar = (id) => {
         const form = document.getElementById('formEliminar')

@@ -1,0 +1,107 @@
+﻿@model IEnumerable<ProyectoFinal.Clases.Consultas.SombreroCONS>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idMaterial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomModelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomClase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomTalla)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tamTalla)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.medFalda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.personalizado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idMaterial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nomModelo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nomClase)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nomTalla)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tamTalla)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.medFalda)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.precio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.stock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.personalizado)
+                </td>
+                <td>
+                    <a class="btn btn-light" id="detalles" onclick="detalles(@item.id)">
+                        <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="btn btn-warning" id="editar" onclick="editar(@item.id)">
+                        <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="btn btn-danger" id="eliminar" onclick="eliminar(@item.id)">
+                        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-action="Detalles" id="formDetalles" method="post">
+    <input type="hidden" name="id" id="idDetalles">
+</form>
+<form asp-action="Editar" id="formEditar" method="get">
+    <input type="hidden" name="id" id="idEditar">
+</form>
+<form asp-action="Eliminar" id="formEliminar" method="post">
+    <input type="hidden" name="id" id="idEliminar">
+</form>
+<script src="~/js/gestion.js"></script>
+<script src="~/js/alerts.js"></script>

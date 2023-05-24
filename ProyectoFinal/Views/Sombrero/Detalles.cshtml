@@ -1,0 +1,108 @@
+﻿@model ProyectoFinal.Clases.Consultas.SombreroCONSD
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>SombreroCONSD</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nomModelo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nomModelo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nomClase)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nomClase)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.toquilla)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.toquilla)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.forro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.forro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.barbiquejo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.barbiquejo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tafiretes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tafiretes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ojitos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ojitos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.resorte)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.resorte)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nomTalla)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nomTalla)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tamTalla)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tamTalla)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.medFalda)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.medFalda)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.stock)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.stock)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.personalizado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.personalizado)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Editar", "Editar", new { id = Model.id }) |
+    <a asp-action="Index">Back to List</a>
+</div>
