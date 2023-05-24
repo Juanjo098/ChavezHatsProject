@@ -3,23 +3,40 @@
 @{
     ViewData["Title"] = "Index";
 }
+<head>
+    <style>
+        table {
+            border: 1px solid;
+        }
 
-<h1>Index</h1>
+        .separado {
+            padding: 16px;
+         }
+    </style>
+</head>
+
 
 <p>
-    <a asp-action="Insertar" class="btn btn-success">Insertar</a>
+
 </p>
-<form asp-action="Index" method="post" id="formBuscar" class="row">
+<form asp-action="Index" method="post" id="formBuscar" class="row" >
     <div class="form-group col-10">
         <label class="form-label">Buscar:</label>
         <input type="text" name="busqueda" id="busqueda" class="form-control" value="@ViewBag.busqueda"/>
     </div>
+    
     <div class="btn-group col-2">
         <button type="submit" class="btn btn-info">Filtrar</button>
         <button type="button" class="btn btn-secondary" onclick="limpiar()">Limpiar</button>
     </div>
 </form>
-<table class="table">
+<h1 class="separado"></h1>
+<p>
+    <a asp-action="Insertar" class="btn btn-success">Insertar</a>
+</p>
+
+<h1 class="separado"></h1>
+<table class="table" style="border-collapse: collapse;">
     <thead>
         <tr>
             <th>
