@@ -36,11 +36,13 @@ namespace ProyectoFinal.Controllers
                             join talla in db.Tallas
                             on item.IdTalla equals talla.IdTalla
                             join tam in db.TamanoTallas
-                            on item.IdTalla equals tam.IdTalla
+                            on talla.IdTalla equals tam.IdTalla
                             join modelo in db.Modelos
                             on item.IdModelo equals modelo.IdModelo
                             join clase in db.Clases
                             on item.IdClase equals clase.IdClase
+                            join material in db.Materials
+                            on item.IdMaterial equals material.IdMaterial
                             where item.Hab == true
                             select new SombreroCONS {
                                 id = item.IdSombrero,
@@ -67,6 +69,27 @@ namespace ProyectoFinal.Controllers
             }
         }
 
+        [HttpPost]
+        public IActionResult Eliminar(int id)
+        {
+            try
+            {
+                using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
+                {
+                    Sombrero sombrero = db.Sombreros.Find(id);
+
+                    if (sombrero == null) return RedirectToAction("Error", "Home");
+
+                    sombrero.Hab = false;
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+        }
         private List<SombreroCONSD> GetListaSombrerosDetallada()
         {
             try

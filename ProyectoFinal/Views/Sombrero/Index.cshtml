@@ -105,3 +105,10 @@
 </form>
 <script src="~/js/gestion.js"></script>
 <script src="~/js/alerts.js"></script>
+<script>
+    const eliminar = (id) => {
+        const form = document.getElementById('formEliminar')
+        document.getElementById('idEliminar').value = id
+        confirmacion("Eliminar sombrero", "Desea eliminar el sombrer?", "Sombrero eliminado", form)
+    }
+</script>
