@@ -33,16 +33,14 @@ namespace ProyectoFinal.Controllers
                 {
                     List<SombreroCONS> lista = (
                             from item in db.Sombreros
-                            join talla in db.Tallas
-                            on item.IdTalla equals talla.IdTalla
                             join tam in db.TamanoTallas
-                            on talla.IdTalla equals tam.IdTalla
-                            join modelo in db.Modelos
-                            on item.IdModelo equals modelo.IdModelo
+                            on item.IdTamTalla equals tam.IdTamTalla
+                            join talla in db.Tallas
+                            on tam.IdTalla equals talla.IdTalla
                             join clase in db.Clases
                             on item.IdClase equals clase.IdClase
-                            join material in db.Materials
-                            on item.IdMaterial equals material.IdMaterial
+                            join modelo in db.Modelos
+                            on item.IdModelo equals modelo.IdModelo
                             where item.Hab == true
                             select new SombreroCONS {
                                 id = item.IdSombrero,
@@ -57,7 +55,7 @@ namespace ProyectoFinal.Controllers
                                 personalizado = (bool)item.Personalizado? "Sí" : "No",
                                 idModelo = item.IdModelo,
                                 idClase = item.IdClase,
-                                idTalla = item.IdTalla,
+                                idTamTalla = item.IdTamTalla,
                             }
                         ).ToList();
                     return lista;
@@ -98,10 +96,10 @@ namespace ProyectoFinal.Controllers
                 {
                     List<SombreroCONSD> lista = (
                             from item in db.Sombreros
-                            join talla in db.Tallas
-                            on item.IdTalla equals talla.IdTalla
                             join tam in db.TamanoTallas
-                            on item.IdTalla equals tam.IdTalla
+                            on item.IdTamTalla equals tam.IdTamTalla
+                            join talla in db.Tallas
+                            on tam.IdTalla equals talla.IdTalla
                             join modelo in db.Modelos
                             on item.IdModelo equals modelo.IdModelo
                             join clase in db.Clases
@@ -136,7 +134,7 @@ namespace ProyectoFinal.Controllers
                                 personalizado = (bool)item.Personalizado ? "Sí" : "No",
                                 idModelo = item.IdModelo,
                                 idClase = item.IdClase,
-                                idTalla = item.IdTalla,
+                                idTamTalla = item.IdTamTalla,
                             }
                         ).ToList();
                     return lista;

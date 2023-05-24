@@ -29,6 +29,6 @@ namespace ProyectoFinal.Clases.Consultas
         [ScaffoldColumn(false)]
         public int idClase { get; set; }
         [ScaffoldColumn(false)]
-        public int idTalla { get; set; }
+        public int idTamTalla { get; set; }
     }
 }
