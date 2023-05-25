@@ -30,5 +30,13 @@ namespace ProyectoFinal.Clases.Consultas
         public int idClase { get; set; }
         [ScaffoldColumn(false)]
         public int idTamTalla { get; set; }
+
+        public bool Comparar(SombreroCONS item)
+        {
+            if (item.idModelo != 0 && item.idModelo != idModelo) return false;
+            if (item.idClase != 0 && item.idClase != idClase) return false;
+            if (item.idTamTalla != 0 && item.idTamTalla != idTamTalla) return false;
+            return true;
+        }
     }
 }

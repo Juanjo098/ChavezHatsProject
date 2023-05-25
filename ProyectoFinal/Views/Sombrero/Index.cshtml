@@ -2,10 +2,30 @@
 
 @{
     ViewData["Title"] = "Index";
+    int modelo = ViewBag.modelo == null ? 0 : ViewBag.modelo;
+    int clase = ViewBag.clase == null ? 0 : ViewBag.clase;
+    int talla = ViewBag.talla == null ? 0 : ViewBag.talla;
 }
 
 <h1>Index</h1>
-
+<form asp-action="Index" method="post" class="form" id="formBuscar">
+    <div class="form-group">
+        <label class="form-label">Modelo:</label>
+        <select asp-items="@ViewBag.modelos" class="form-select" id="modelo" name="idModelo"></select>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Clase:</label>
+        <select asp-items="@ViewBag.clases" class="form-select" id="clase" name="idClase"></select>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Talla:</label>
+        <select asp-items="@ViewBag.tallas" class="form-select" id="talla" name="idTamTalla"></select>
+    </div>
+    <div class="btn-group">
+        <button type="submit" class="btn btn-info">Filtrar</button>
+        <button type="button" class="btn btn-secondary" onclick="limpiarSombrero()">Limpiar</button>
+    </div>
+</form>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -106,9 +126,22 @@
 <script src="~/js/gestion.js"></script>
 <script src="~/js/alerts.js"></script>
 <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById('modelo').value = @modelo
+        document.getElementById('clase').value = @clase
+        document.getElementById('talla').value = @talla
+    })
+
     const eliminar = (id) => {
         const form = document.getElementById('formEliminar')
         document.getElementById('idEliminar').value = id
         confirmacion("Eliminar sombrero", "Desea eliminar el sombrer?", "Sombrero eliminado", form)
+    }
+
+    const limpiarSombrero = () => {
+        document.getElementById('modelo').value = 0
+        document.getElementById('clase').value = 0
+        document.getElementById('talla').value = 0
+        document.getElementById('formBuscar').submit()
     }
 </script>
