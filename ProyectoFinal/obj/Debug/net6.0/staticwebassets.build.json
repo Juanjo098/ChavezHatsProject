@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NC2VtqrCHi2crgB98WsGllfskTb0PagKRVfC62TvvjY=",
+  "Hash": "stkHu50+xPoJC2XgfO/8m4Z55I5oBd/5pMLa7ZZjXf8=",
   "Source": "ProyectoFinal",
   "BasePath": "_content/ProyectoFinal",
   "Mode": "Default",
@@ -85,12 +85,12 @@
       "OriginalItemSpec": "wwwroot\\css\\fondo.jpeg"
     },
     {
-      "Identity": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\css\\Imagen de WhatsApp 2023-03-14 a las 02.30.41.jpg",
+      "Identity": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\css\\Logo.jpg",
       "SourceId": "ProyectoFinal",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\",
       "BasePath": "_content/ProyectoFinal",
-      "RelativePath": "css/Imagen de WhatsApp 2023-03-14 a las 02.30.41.jpg",
+      "RelativePath": "css/Logo.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,7 +99,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Imagen de WhatsApp 2023-03-14 a las 02.30.41.jpg"
+      "OriginalItemSpec": "wwwroot\\css\\Logo.jpg"
     },
     {
       "Identity": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\css\\principio.jpg",

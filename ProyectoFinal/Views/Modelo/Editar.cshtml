@@ -4,11 +4,20 @@
     ViewData["Title"] = "Editar";
 }
 
-<h1>Editar</h1>
+<head>
+    <style>
+        .container {
+            padding: 88px 300px 52px 300px;
+        }
 
-<h4>SimpleEDIT</h4>
-<hr />
-<div class="row">
+        body {
+            background-color: #c99e6b;
+        }
+    </style>
+</head>
+<div class="row_Editar">
+    <h4 class="h4Editar">Editar</h4>  
+<hr/>
     <div class="col-md-4">
         <form asp-action="Editar" id="form">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -23,15 +32,13 @@
                 <span asp-validation-for="nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="button" value="Save" class="btn btn-primary" onclick="enviar()"/>
+                <input type="button" value="Save" class="btn-btn-primary-editar" onclick="enviar()" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
