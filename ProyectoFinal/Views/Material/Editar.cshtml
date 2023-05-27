@@ -23,12 +23,49 @@
     tmp = TempData["error"];
     string error = tmp == null ? "" : "error";
 }
+<head>
+    <style>
+        .container {
+            padding: 0px 450px 52px 300px;
+            margin: 32px 3px 18px 0;
+        }
 
-<h1>Editar</h1>
+        body {
+            background-color: #c99e6b;
+        }
 
-<h4>MaterialEDIT</h4>
-<hr />
-<div class="row">
+        .form-select {
+            
+            width: 250%;
+        }
+
+        .imgW {
+            margin: -152px 368px;
+            padding: -30px -23px 6px 23px;
+        }
+        img.img_woman {
+            margin: 68px 0;
+            padding: 0px 0px 0px 0px;
+            position: absolute;
+            border-style: solid;
+            border-width: medium;
+        }
+
+        .row_Editar {
+            border-style: solid;
+            border-width: medium;
+            padding: 38px 38px 32px;
+            margin: 203px 0px 10px 0px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<div class="imgW"> 
+<img src="https://tse1.mm.bing.net/th/id/OIP.Uv10SB9f4rfTfm2lM17lDwHaE7?pid=ImgDet&rs=1" alt="Logo_chavez" class="img_woman">
+</div>
+<div class="row_Editar">
+    <h4 class="h4Editar">Editar Material</h4>
+    <hr/>
     <div class="col-md-4">
         <form asp-action="Editar" id="form" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -47,6 +84,7 @@
                 <select asp-for="idForro" asp-items="@forros" id="forro" class="form-select"></select>
                 <span asp-validation-for="idForro" class="text-danger"></span>
             </div>
+           
             <div class="form-group">
                 <label asp-for="idBarbiquejo" class="control-label"></label>
                 <select asp-for="idBarbiquejo" asp-items="@barbiquelos" id="barbiquejo" class="form-select"></select>
@@ -68,15 +106,14 @@
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn-btn-primary-editar" />
             </div>
         </form>
+       
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 <script src="~/js/alerts.js"></script>
 <script>
         const error = '@error'

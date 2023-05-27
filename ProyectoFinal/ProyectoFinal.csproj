@@ -1,51 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="Views\Barbiquejo\Detalles.cshtml" />
-    <None Include="Views\Barbiquejo\Editar.cshtml" />
-    <None Include="Views\Barbiquejo\Index.cshtml" />
-    <None Include="Views\Barbiquejo\Insertar.cshtml" />
-    <None Include="Views\Clase\Detalles.cshtml" />
-    <None Include="Views\Clase\Editar.cshtml" />
-    <None Include="Views\Clase\Index.cshtml" />
-    <None Include="Views\Clase\Insertar.cshtml" />
-    <None Include="Views\Forro\Detalles.cshtml" />
-    <None Include="Views\Forro\Editar.cshtml" />
-    <None Include="Views\Forro\Index.cshtml" />
-    <None Include="Views\Forro\Insertar.cshtml" />
-    <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Home\Privacy.cshtml" />
-    <None Include="Views\IniciarSesion\Index.cshtml" />
-    <None Include="Views\Modelo\Detalles.cshtml" />
-    <None Include="Views\Modelo\Editar.cshtml" />
-    <None Include="Views\Modelo\Index.cshtml" />
-    <None Include="Views\Modelo\Insertar.cshtml" />
-    <None Include="Views\Registrar\Index.cshtml" />
-    <None Include="Views\Shared\Error.cshtml" />
-    <None Include="Views\Shared\_Layout.cshtml" />
-    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
-    <None Include="Views\Tafirete\Detalles.cshtml" />
-    <None Include="Views\Tafirete\Editar.cshtml" />
-    <None Include="Views\Tafirete\Index.cshtml" />
-    <None Include="Views\Tafirete\Insertar.cshtml" />
-    <None Include="Views\TipoUsuario\Detalles.cshtml" />
-    <None Include="Views\TipoUsuario\Editar.cshtml" />
-    <None Include="Views\TipoUsuario\Index.cshtml" />
-    <None Include="Views\TipoUsuario\Insertar.cshtml" />
-    <None Include="Views\Toquilla\Detalles.cshtml" />
-    <None Include="Views\Toquilla\Editar.cshtml" />
-    <None Include="Views\Toquilla\Index.cshtml" />
-    <None Include="Views\Toquilla\Insertar.cshtml" />
-    <None Include="Views\Usuario\Detalles.cshtml" />
-    <None Include="Views\Usuario\Editar.cshtml" />
-    <None Include="Views\Usuario\Index.cshtml" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
