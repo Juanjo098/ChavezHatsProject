@@ -4,12 +4,22 @@
     ViewData["Title"] = "Detalles";
 }
 
-<h1>Detalles</h1>
+<head>
+    <style>
 
-<div>
-    <h4>UsuarioCONS</h4>
-    <hr />
-    <dl class="row">
+        .container {
+            width: 418px;
+        }
+
+        body {
+            background-color: #c99e6b;
+        }
+    </style>
+</head>
+
+<div class="row_Editar">
+    <h4 class="h4Editar">Detalles Usuario</h4>
+    <hr/>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.id)
         </dt>
@@ -41,8 +51,10 @@
             @Html.DisplayFor(model => model.tipoUsuario)
         </dd>
     </dl>
+
+    <div>
+        @Html.ActionLink("Editar", "Editar", new { /* id = Model.PrimaryKey */ }) 
+
+    </div>
 </div>
-<div>
-    @Html.ActionLink("Editar", "Editar", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
-</div>
+
