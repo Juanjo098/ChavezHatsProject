@@ -3,12 +3,26 @@
 @{
     ViewData["Title"] = "Insertar";
 }
+<head>
+    <style>
 
-<h1>Insertar</h1>
+        .container {
+            width: 418px;
+        }
 
-<h4>SimpleINST</h4>
-<hr />
-<div class="row">
+        body {
+            background-color: #c99e6b;
+        }
+
+        .container {
+            width: 418px;
+            margin: 7% 35%;
+        }
+    </style>
+</head>
+<div class="row_Editar">
+    <h4 class="h4Editar">Insertar Clase</h4>
+    <hr/>
     <div class="col-md-4">
         <form asp-action="Insertar" id="form">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -18,16 +32,12 @@
                 <span asp-validation-for="nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="button" value="Create" class="btn btn-primary" onclick="enviar()"/>
+                <input type="button" value="Create" class="btn-btn-primary-editar" onclick="enviar()" />
             </div>
         </form>
+    
     </div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
