@@ -1,0 +1,61 @@
+﻿@model ProyectoFinal.Clases.Consultas.MaterialCONS
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<div class="row_Editar">
+    <h4 class="h4Editar">Detalles Material</h4>
+    <hr/>
+
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.toquilla)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.toquilla)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.forro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.forro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.barbiquejo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.barbiquejo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tafiretes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tafiretes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ojitos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ojitos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.resorte)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.resorte)
+        </dd>
+    </dl>
+    
+    <div class="btn-btn-primary-editar">
+        @Html.ActionLink("Editar", "Editar", new { id = Model.id }) 
+
+</div>
+</div>
+

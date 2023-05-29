@@ -1,0 +1,60 @@
+﻿@model ProyectoFinal.Clases.Consultas.UsuarioCONS
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<head>
+    <style>
+
+        .container {
+            width: 418px;
+        }
+
+        body {
+            background-color: #c99e6b;
+        }
+    </style>
+</head>
+
+<div class="row_Editar">
+    <h4 class="h4Editar">Detalles Usuario</h4>
+    <hr/>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.contrasena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.contrasena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tipoUsuario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tipoUsuario)
+        </dd>
+    </dl>
+
+    <div>
+        @Html.ActionLink("Editar", "Editar", new { /* id = Model.PrimaryKey */ }) 
+
+    </div>
+</div>
+
