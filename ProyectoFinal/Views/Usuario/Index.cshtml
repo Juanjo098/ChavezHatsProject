@@ -2,19 +2,28 @@
 
 @{
     ViewData["Title"] = "Index";
+    List<SelectListItem> usuarios = ViewBag.usuarios;
+    int usuario = ViewBag.usuario == null ? 0 : ViewBag.usuario; 
 }
 
 <h4 class="h4Editar">Usuario</h4>
 
-<hr/>
+<hr />
 
 <!--
 <p>
     <a asp-action="Create">Create New</a>hgg
 </p>
 -->
-<form asp-action="Index" method="post">
-
+<form asp-action="Index" class="form" method="post">
+    <div class="form-group">
+        <label class="form-label">Buscar por:</label>
+        <select name="busqueda" asp-items="@usuarios" class="form-select" id="busqueda"></select>
+    </div>
+    <div class="btn-group">
+    <button class="btn btn-info" type="submit">Buscar</button>
+    <button type="button" class="btn btn-light" onclick="limpiar()">Limpiar</button>
+    </div>
 </form>
 <table class="table">
     <thead>
@@ -71,3 +80,10 @@
         }
     </tbody>
 </table>
+<script src="~/js/gestion.js"></script>
+<script src="~/js/alerts.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("busqueda").value = @usuario;
+    })
+</script>

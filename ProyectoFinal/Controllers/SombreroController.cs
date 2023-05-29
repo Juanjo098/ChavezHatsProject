@@ -156,6 +156,7 @@ namespace ProyectoFinal.Controllers
                                 precio = (float)item.Precio,
                                 stock = (int)item.Stock,
                                 personalizado = (bool)item.Personalizado ? "Sí" : "No",
+                                imagen = item.Imagen,
                                 idModelo = item.IdModelo,
                                 idClase = item.IdClase,
                                 idTamTalla = item.IdTamTalla,
