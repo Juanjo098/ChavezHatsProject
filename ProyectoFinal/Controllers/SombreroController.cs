@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Differencing;
 using ProyectoFinal.Clases.Consultas;
 using ProyectoFinal.Models;
 
@@ -8,11 +10,32 @@ namespace ProyectoFinal.Controllers
     {
         public IActionResult Index()
         {
+            FillModeloDropdown(false);
+            FillClaseDropdown(false);
+            FillTallaDropdown(false);
             List<SombreroCONS> lista = GetListaSombreros();
 
             if (lista == null) return RedirectToAction("Error", "Home");
 
             return View(lista);
+        }
+
+        [HttpPost]
+        public IActionResult Index(SombreroCONS item)
+        {
+            FillModeloDropdown(false);
+            FillClaseDropdown(false);
+            FillTallaDropdown(false);
+
+            ViewBag.modelo = item.idModelo;
+            ViewBag.clase = item.idClase;
+            ViewBag.talla = item.idTamTalla;
+
+            List<SombreroCONS> lista = GetListaSombreros();
+
+            if (lista == null) return RedirectToAction("Error", "Home");
+
+            return View(lista.FindAll(e => e.Comparar(item)));
         }
 
         [HttpPost]
@@ -42,7 +65,8 @@ namespace ProyectoFinal.Controllers
                             join modelo in db.Modelos
                             on item.IdModelo equals modelo.IdModelo
                             where item.Hab == true
-                            select new SombreroCONS {
+                            select new SombreroCONS
+                            {
                                 id = item.IdSombrero,
                                 idMaterial = item.IdMaterial,
                                 nomModelo = modelo.NomModelo,
@@ -52,7 +76,7 @@ namespace ProyectoFinal.Controllers
                                 medFalda = (float)item.MedFalda,
                                 precio = (float)item.Precio,
                                 stock = (int)item.Stock,
-                                personalizado = (bool)item.Personalizado? "Sí" : "No",
+                                personalizado = (bool)item.Personalizado ? "Sí" : "No",
                                 idModelo = item.IdModelo,
                                 idClase = item.IdClase,
                                 idTamTalla = item.IdTamTalla,
@@ -132,6 +156,7 @@ namespace ProyectoFinal.Controllers
                                 precio = (float)item.Precio,
                                 stock = (int)item.Stock,
                                 personalizado = (bool)item.Personalizado ? "Sí" : "No",
+                                imagen = item.Imagen,
                                 idModelo = item.IdModelo,
                                 idClase = item.IdClase,
                                 idTamTalla = item.IdTamTalla,
@@ -153,6 +178,62 @@ namespace ProyectoFinal.Controllers
             if (lista == null) return null;
 
             return lista.Find(e => e.id == id);
+        }
+
+        private void FillModeloDropdown(bool edit)
+        {
+            using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
+            {
+                List<SelectListItem> lista = (
+                    from item in db.Modelos
+                    where item.Hab == true
+                    select new SelectListItem { 
+                        Value = item.IdModelo.ToString(),
+                        Text = item.NomModelo
+                    }
+                    ).ToList();
+                if (!edit)
+                    lista.Insert(0, new SelectListItem { Value = "0", Text = "Elija una opción"});
+                ViewBag.modelos = lista;
+            }
+        }
+
+        private void FillClaseDropdown(bool edit)
+        {
+            using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
+            {
+                List<SelectListItem> lista = (
+                    from item in db.Clases
+                    where item.Hab == true
+                    select new SelectListItem
+                    {
+                        Value = item.IdClase.ToString(),
+                        Text = item.NomClase
+                    }
+                    ).ToList();
+                if (!edit)
+                    lista.Insert(0, new SelectListItem { Value = "0", Text = "Elija una opción" });
+                ViewBag.clases = lista;
+            }
+        }
+
+        private void FillTallaDropdown(bool edit)
+        {
+            using (CHAVEZ_HATSContext db = new CHAVEZ_HATSContext())
+            {
+                List<SelectListItem> lista = (
+                    from item in db.TamanoTallas
+                    where item.Hab == true
+                    select new SelectListItem
+                    {
+                        Value = item.IdTamTalla.ToString(),
+                        Text = item.TamTalla.ToString()
+                    }
+                    ).ToList();
+                if (!edit)
+                    lista.Insert(0, new SelectListItem { Value = "0", Text = "Elija una opción" });
+                ViewBag.tallas = lista;
+            }
         }
     }
 }
