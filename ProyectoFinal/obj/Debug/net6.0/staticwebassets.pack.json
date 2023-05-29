@@ -37,6 +37,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\img\\placeholder1.jpg",
+      "PackagePath": "staticwebassets\\img\\placeholder1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\img\\placeholder2.jpg",
+      "PackagePath": "staticwebassets\\img\\placeholder2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\img\\placeholder3.jpg",
+      "PackagePath": "staticwebassets\\img\\placeholder3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\img\\placeholder4.jpg",
+      "PackagePath": "staticwebassets\\img\\placeholder4.jpg"
+    },
+    {
       "Id": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\wwwroot\\js\\alerts.js",
       "PackagePath": "staticwebassets\\js\\alerts.js"
     },

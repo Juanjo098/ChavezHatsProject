@@ -37,6 +37,8 @@ namespace ProyectoFinal.Clases.Consultas
         [Display(Name = "Personalizado")]
         public string personalizado { get; set; }
         [ScaffoldColumn(false)]
+        public string imagen { get; set; }
+        [ScaffoldColumn(false)]
         public int idModelo { get; set; }
         [ScaffoldColumn(false)]
         public int idClase { get; set; }
