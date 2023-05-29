@@ -534,3 +534,4 @@ C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\obj\De
 C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\obj\Debug\net6.0\ProyectoFinal.pdb
 C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\obj\Debug\net6.0\ProyectoFinal.genruntimeconfig.cache
 C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\obj\Debug\net6.0\ref\ProyectoFinal.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\obj\Debug\net6.0\scopedcss\Views\Views\Shared\_Layout.cshtml.rz.scp.css

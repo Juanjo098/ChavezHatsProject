@@ -1,0 +1,111 @@
+﻿@model ProyectoFinal.Clases.Consultas.IniciarSesionCONS
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Slabo+27px&display=swap" rel="stylesheet">
+
+    <style>
+        .main.pb-3 {
+            border-style: solid;
+            border-width: medium;
+            padding: 38px 38px 32px;
+        }
+
+        }
+
+       
+        .container {
+            max-width: 715px;
+        }
+
+        .container {
+            padding: 43px 300px 52px 300px;
+        }
+         body {
+            background-color: #c99e6b;
+        }
+        input.btn.btn-primary {
+            width: 117px;
+            padding: 7px;
+            margin: 13px 0 10px;
+            height: 39px;
+            background-color:black;
+        }
+        h4{
+            font-family: 'Slabo 27px', serif;
+            font-size: 35px;
+            height: 29px;
+        }
+
+        .container {
+            padding: 0 300px 0px 300px;
+        }
+
+        .col-md-4 {
+            width: 72.333333%;
+            padding: 0px 0px 0 109px;
+        }
+
+        main.pb-3 {
+            border-style: solid;
+            border-style: solid;
+            border-width: medium;
+            padding: 38px 38px 32px;
+            margin: 3px 0px 10px 0px;
+            background-color: wheat;
+        
+
+        }
+
+
+        .container {
+            padding: 43px 300px 52px 300px;
+        }
+
+    </style>
+</head>
+
+
+<h4>Iniciar Sesion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="correo" class="control-label"></label>
+                <input asp-for="correo" class="form-control" />
+                <span asp-validation-for="correo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="contrasena" class="control-label"></label>
+                <input asp-for="contrasena" class="form-control" />
+                <span asp-validation-for="contrasena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script src="~/js/alerts.js"></script>
+<script>
+    const error = '@ViewBag.error'
+    document.addEventListener("DOMContentLoaded", () => {
+        if (error != '') {
+            mesanjeError("Error al iniciar sesión", "El correo y/o la contraseña no coinciden, intente de nuevo")
+        }
+    })
+</script>
