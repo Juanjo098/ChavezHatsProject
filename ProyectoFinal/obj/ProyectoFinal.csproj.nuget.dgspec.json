@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanj\\OneDrive\\Documentos\\Desarrollo de Aplicaciones Web\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj": {}
+    "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\ProyectoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanj\\OneDrive\\Documentos\\Desarrollo de Aplicaciones Web\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj": {
+    "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\ProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanj\\OneDrive\\Documentos\\Desarrollo de Aplicaciones Web\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\ProyectoFinal.csproj",
         "projectName": "ProyectoFinal",
-        "projectPath": "C:\\Users\\juanj\\OneDrive\\Documentos\\Desarrollo de Aplicaciones Web\\ProyectoFinal\\ProyectoFinal\\ProyectoFinal.csproj",
-        "packagesPath": "C:\\Users\\juanj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanj\\OneDrive\\Documentos\\Desarrollo de Aplicaciones Web\\ProyectoFinal\\ProyectoFinal\\obj\\",
+        "projectPath": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\ProyectoFinal.csproj",
+        "packagesPath": "C:\\Users\\a17ju\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\a17ju\\OneDrive\\Documentos\\GitHub\\ChavezHatsProject\\ProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a17ju\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

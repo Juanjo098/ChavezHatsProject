@@ -9,193 +9,193 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoFinal
 build_property.RootNamespace = ProyectoFinal
-build_property.ProjectDir = C:\Users\juanj\OneDrive\Documentos\Desarrollo de Aplicaciones Web\ProyectoFinal\ProyectoFinal\
+build_property.ProjectDir = C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\juanj\OneDrive\Documentos\Desarrollo de Aplicaciones Web\ProyectoFinal\ProyectoFinal
+build_property.MSBuildProjectDirectory = C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Barbiquejo/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Barbiquejo/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYmlxdWVqb1xEZXRhbGxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Barbiquejo/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Barbiquejo/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYmlxdWVqb1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Barbiquejo/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Barbiquejo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYmlxdWVqb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Barbiquejo/Insertar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Barbiquejo/Insertar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYmlxdWVqb1xJbnNlcnRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Clase/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Clase/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VcRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Clase/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Clase/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Clase/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Clase/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Clase/Insertar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Clase/Insertar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc2VcSW5zZXJ0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Forro/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Forro/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ycm9cRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Forro/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Forro/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ycm9cRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Forro/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Forro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ycm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Forro/Insertar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Forro/Insertar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ycm9cSW5zZXJ0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Home/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Home/Privacy.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/IniciarSesion/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/IniciarSesion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5pY2lhclNlc2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Material/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Material/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Material/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Material/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Material/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Material/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Material/Insertar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Material/Insertar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcSW5zZXJ0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Modelo/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Modelo/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXERldGFsbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Modelo/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Modelo/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Modelo/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Modelo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Modelo/Insertar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Modelo/Insertar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxvXEluc2VydGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Registrar/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Registrar/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmFyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Shared/Error.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Sombrero/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Sombrero/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29tYnJlcm9cRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Sombrero/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Sombrero/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29tYnJlcm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Tafirete/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Tafirete/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFmaXJldGVcRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Tafirete/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Tafirete/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFmaXJldGVcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Tafirete/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Tafirete/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFmaXJldGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Tafirete/Insertar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Tafirete/Insertar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFmaXJldGVcSW5zZXJ0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/TipoUsuario/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/TipoUsuario/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/TipoUsuario/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/TipoUsuario/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/TipoUsuario/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/TipoUsuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/TipoUsuario/Insertar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/TipoUsuario/Insertar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb1VzdWFyaW9cSW5zZXJ0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Toquilla/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Toquilla/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9xdWlsbGFcRGV0YWxsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Toquilla/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Toquilla/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9xdWlsbGFcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Toquilla/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Toquilla/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9xdWlsbGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Toquilla/Insertar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Toquilla/Insertar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9xdWlsbGFcSW5zZXJ0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Usuario/Detalles.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Usuario/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhbGxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Usuario/Editar.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Usuario/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Usuario/Index.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/_ViewImports.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/_ViewStart.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juanj/OneDrive/Documentos/Desarrollo de Aplicaciones Web/ProyectoFinal/ProyectoFinal/Views/Shared/_Layout.cshtml]
+[C:/Users/a17ju/OneDrive/Documentos/GitHub/ChavezHatsProject/ProyectoFinal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ww5h623m21
