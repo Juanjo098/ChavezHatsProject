@@ -2,28 +2,45 @@
 
 @{
     ViewData["Title"] = "Index";
-    DateTime fechaInicio = ViewBag.fechaInicio == null ? DateTime.Now : ViewBag.fechaInicio;
     DateTime fechaFinal = ViewBag.fechaFinal == null ? DateTime.Now : ViewBag.fechaFinal;
-
+    DateTime fechaInicio;
+    if (ViewBag.fechaInicio == null)
+    {
+        fechaInicio = fechaFinal.AddMonths(-1);
+        if (fechaInicio.Month == 12 && fechaFinal.Month == 1)
+        {
+            fechaInicio = new DateTime(fechaInicio.Year - 1, fechaInicio.Month, fechaInicio.Day);
+        }
+    }
+    else
+    {
+        fechaInicio = ViewBag.fechaInicio;
+    }
 }
 
-<h1>Index</h1>
+<h1>Ventas</h1>
+
+<button class="btn btn-outline-success" onclick="exportar(3)">
+    <span>
+        Exportar a Excel
+    </span>
+</button>
 
 <form asp-action="Index" method="post" class="form row">
     <div class="form-group col-6">
         <label class="form-label">Fecha de inicio</label>
-        <input type="date" class="form-control" name="fechaInicio" id="fechaInicio"/>
+        <input type="date" class="form-control" name="fechaInicio" id="fechaInicio" />
     </div>
     <div class="form-group col-6">
         <label class="form-label">Fecha final</label>
-        <input type="date" class="form-control" name="fechaFinal" id="fechaFinal"/>
+        <input type="date" class="form-control" name="fechaFinal" id="fechaFinal" />
     </div>
-    <div class="btn-group">
-        <button type="submit">Buscar</button>
+    <div class="btn-group col-3">
+        <button type="submit" class="btn btn-primary">Buscar</button>
     </div>
 </form>
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead class="table-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.id)
@@ -36,32 +53,64 @@
             </th>
             <th></th>
         </tr>
+        <tr>
+            <form asp-action="Exportar" id="frmReporte">
+            <th>
+                <input type="checkbox" checked name="propiedades" value="id" />
+                <input type="hidden" name="tipoReporte" id="tipoReporte" />
+            </th>
+            <th><input type="checkbox" checked name="propiedades" value="fecha" /></th>
+            <th><input type="checkbox" checked name="propiedades" value="total" /></th>
+            <th></th>
+            </form>
+        </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.fecha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.total)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fecha)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.total)
+                </td>
+                <td>
+                    <a class="btn btn-light" id="detalles" onclick="detalles(@item.id)">
+                        <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="btn btn-danger" id="eliminar" onclick="eliminar(@item.id)">
+                        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                    </a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<form asp-action="Detalles" id="formDetalles" method="post">
+    <input type="hidden" name="id" id="idDetalles">
+</form>
+<form asp-action="Eliminar" id="formEliminar" method="post">
+    <input type="hidden" name="id" id="idEliminar">
+</form>
+<script src="~/js/gestion.js"></script>
+<script src="~/js/alerts.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         console.log(@fechaInicio.ToString("yyyy-MM-dd"))
         document.getElementById("fechaInicio").value = "@fechaInicio.ToString("yyyy-MM-dd")"
         document.getElementById("fechaFinal").value = "@fechaFinal.ToString("yyyy-MM-dd")"
     })
+    const eliminar = (id) => {
+        const form = document.getElementById('formEliminar')
+        document.getElementById('idEliminar').value = id
+        confirmacion("Eliminar venta", "Desea eliminar la venta?", "Venta eliminada", form)
+    }
+    const exportar = (id) => {
+        document.getElementById("tipoReporte").value = id
+        document.getElementById("frmReporte").submit()
+    }
 </script>

@@ -45,10 +45,6 @@
 
 <hr/>
 
-<p>
-
-</p>
-
 <form asp-action="Index" method="post" id="formBuscar" class="row">
     <div class="form-group col-10">
         <label class="form-label">Buscar:</label>
@@ -66,8 +62,8 @@
 </p>
 <h1 class="separado"></h1>
 
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead class="table-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.id)
