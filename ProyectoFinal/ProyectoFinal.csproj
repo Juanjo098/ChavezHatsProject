@@ -53,6 +53,8 @@
     <None Include="Views\Usuario\Detalles.cshtml" />
     <None Include="Views\Usuario\Editar.cshtml" />
     <None Include="Views\Usuario\Index.cshtml" />
+    <None Include="Views\Venta\Detalles.cshtml" />
+    <None Include="Views\Venta\Index.cshtml" />
     <None Include="Views\Views\Barbiquejo\Detalles.cshtml" />
     <None Include="Views\Views\Barbiquejo\Editar.cshtml" />
     <None Include="Views\Views\Barbiquejo\Index.cshtml" />

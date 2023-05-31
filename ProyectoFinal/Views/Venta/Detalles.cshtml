@@ -6,12 +6,37 @@
     UsuarioCONS usuario = ViewBag.usuario;
     List<SomberoVentaCONS> sombreros = ViewBag.sombreros;
 }
+<head>
+    <style>
 
-<h1>Detalles de venta</h1>
+        .h4Editar {
+            font-family: 'Slabo 27px', serif;
+            font-size: 35px;
+            height: 29px;
+            text-align: center;
+        }
 
-<div>
-    <hr />
-    <dl class="row">
+        dl.row1 {
+    border-style: solid;
+    border-width: medium;
+    padding: 25px 65px 19px 27px;
+    margin: 16px 733px 16px 1px;
+    background-color: wheat;
+}
+
+
+
+
+    </style>
+</head>
+
+<div class="titulo">
+    <b>  <h4 class="h4Editar"> Detalles de venta</h4></b>
+</div>
+<hr />
+<div class="1">
+   
+    <dl class="row1">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.id)
         </dt>
@@ -76,8 +101,4 @@
             }
         </tbody>
     </table>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
 </div>

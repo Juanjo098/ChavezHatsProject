@@ -555,3 +555,22 @@ C:\Users\juanj\OneDrive\Documentos\Desarrollo de Aplicaciones Web\ProyectoFinal\
 C:\Users\juanj\OneDrive\Documentos\Desarrollo de Aplicaciones Web\ProyectoFinal\ProyectoFinal\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\juanj\OneDrive\Documentos\Desarrollo de Aplicaciones Web\ProyectoFinal\ProyectoFinal\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\juanj\OneDrive\Documentos\Desarrollo de Aplicaciones Web\ProyectoFinal\ProyectoFinal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\EPPlus.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.barcodes.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.bouncy-castle-connector.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.forms.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.io.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.kernel.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.layout.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.pdfa.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.sign.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.styledxmlparser.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.svg.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\itext.commons.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\a17ju\OneDrive\Documentos\GitHub\ChavezHatsProject\ProyectoFinal\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

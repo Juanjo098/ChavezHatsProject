@@ -10,6 +10,20 @@
 
 <head>
     <style>
+
+        table.table.table-striped {
+            padding: 0 0 1px 14px;
+            margin: 21px 24px 10px 0px;
+        }
+
+        form#formBuscar {
+            margin: 0 0 114px 0px;
+        }
+
+        element.style {
+            margin: 0 0 130px 0;
+        }
+
         select#modelo {
             padding: 0 0 0 8px;
             width: 151px;
@@ -48,7 +62,7 @@
         form#formBuscar {
             border-style: solid;
             border-width: medium;
-            padding: 21px 59px 1px;
+            padding: 21px 59px 0px;
             margin: 5px 2px 12px 1px;
             background-color: wheat;
         }
@@ -96,6 +110,37 @@
         button.btn.btn-secondary {
             padding: 6px;
         }
+
+        form#formBuscar {
+    border-style: solid;
+    border-width: medium;
+    padding: 32px 72px -3px;
+    margin: 8px 2px 22px 1px;
+    background-color: wheat;
+}
+
+        .Nuevo {
+            margin: 0 813px 12px 19px;
+            color: #fff;
+            background-color: #198754;
+            border-color: #198754;
+        }
+        p {
+            margin: 0 0 40px 11px;
+        }
+
+        form#formBuscar {
+            border-style: solid;
+            border-width: medium;
+            padding: 16px 30px 0 22px;
+            margin: 8px 0 -2px 1px;
+            background-color: wheat;
+        }
+
+        .Nuevo {
+            padding: 0px 0 0;
+            margin: -53px 31px -28px -6px;
+        }
     </style>
 
 </head>
@@ -119,13 +164,15 @@
         <div class="botones">
             <button type="submit" class="btn btn-info">Filtrar</button>
             <button type="button" class="btn btn-secondary" onclick="limpiarSombrero()">Limpiar</button>
+
+
         </div>
+        
     </form>
-    <div class="Nuevo">
-        <p>
-            <a asp-action="Create" class="Nuevo"> Nuevo </a>
-        </p>
     </div>
+
+
+   
 
     <table class="table table-striped">
         <thead class="table-dark">
@@ -211,7 +258,13 @@
             }
         </tbody>
     </table>
-
+    <p class="dfs "></p>
+    <div class="Nuevo">
+            <p >
+                <a asp-action="Create" class="Nuevo"> Nuevo </a>
+            </p>
+        </div>
+<p class="dfs "></p>
     <form asp-action="Detalles" id="formDetalles" method="post">
         <input type="hidden" name="id" id="idDetalles">
     </form>

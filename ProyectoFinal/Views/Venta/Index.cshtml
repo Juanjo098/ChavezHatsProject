@@ -17,28 +17,130 @@
         fechaInicio = ViewBag.fechaInicio;
     }
 }
+<head>
+    <style>
+        .Ventas {
+            border-style: solid;
+            border-width: medium;
+            padding: 25px 59px 16px 46px;
+            margin: 13px 2px 12px 0px;
+            background-color: wheat;
+        }
 
-<h1>Ventas</h1>
+        .col-6 {
+            flex: 0 0 auto;
+            width: 38%;
+        }
 
-<button class="btn btn-outline-success" onclick="exportar(3)">
-    <span>
-        Exportar a Excel
-    </span>
-</button>
 
-<form asp-action="Index" method="post" class="form row">
+        .btn-group-vertical>.btn, .btn-group>.btn {
+    position: relative;
+    flex: 1 1 auto;
+    height: 39px;
+    margin: 27px 64px 14px 15px;
+    padding: 0 0 0px 0px;
+}
+
+        .col-7 {
+    flex: 0 0 auto;
+    width: 36.333333%;
+}
+
+
+
+        .Ventascontiene {
+            border-style: solid;
+            padding: 11px 28px 11px 10px;
+            border-width: medium;
+            margin: 23px 1px 16px 0px;
+        }
+
+        [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+            cursor: pointer;
+            margin: -29px 19px 6px 83px;
+        }
+        h1 {
+            margin: 10px 25px -3px 10px;
+        }
+
+        .Ventascontiene {
+            border-style: solid;
+            padding: 13px 29px 11px 10px;
+            border-width: medium;
+            margin: 23px 632px 16px 0px;
+        }
+
+        .btn-group, .btn-group-vertical {
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            margin: -11px 6px 2px 551px;
+        }
+        .btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    margin: -11px 6px 2px 580px;
+}
+
+        .btn-group, .btn-group-vertical {
+            padding: 0 0 0 0px;
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            margin: -11px 6px 2px 580px;
+        }
+
+
+        .a {
+
+            margin: -6px 36px 15px 268px;
+
+        }
+
+
+        main.pb-3 {
+            margin: 61px 21px 202px 34px;
+        }
+
+
+    </style>
+</head>
+
+<div class="Ventas">
+
+    <form asp-action="Index" method="post" class="form row">
     <div class="form-group col-6">
         <label class="form-label">Fecha de inicio</label>
         <input type="date" class="form-control" name="fechaInicio" id="fechaInicio" />
     </div>
-    <div class="form-group col-6">
+    <div class="form-group col-7">
         <label class="form-label">Fecha final</label>
         <input type="date" class="form-control" name="fechaFinal" id="fechaFinal" />
     </div>
+    <div class="a">
+
+ 
     <div class="btn-group col-3">
         <button type="submit" class="btn btn-primary">Buscar</button>
-    </div>
+            </div>
+        </div>
 </form>
+
+    
+
+</div>
+
+<div class="Ventascontiene">
+    <h1>Ventas</h1>
+
+    <button class="btn btn-outline-success" onclick="exportar(3)">
+        <span>
+            Exportar a Excel
+        </span>
+    </button>
+</div>
+
 <table class="table table-striped">
     <thead class="table-dark">
         <tr>
