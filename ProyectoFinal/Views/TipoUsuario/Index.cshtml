@@ -3,12 +3,113 @@
 @{
     ViewData["Title"] = "Index";
 }
+<head>
+    <style>
+        select#modelo {
+            padding: 0 0 0 8px;
+            width: 151px;
+        }
 
-<h1>Index</h1>
+        select#clase {
+            padding: 0 0 0 8px;
+            width: 151px;
+        }
 
-<p>
-    <a asp-action="Insertar">Create New</a>
-</p>
+        select#talla {
+            padding: 0 0 0 8px;
+            width: 151px;
+        }
+
+        .Contenedor_Adentro {
+            margin: -54px 154px;
+        }
+
+        .Contenedor_Adentro2 {
+            margin: 0px 306px;
+        }
+
+        .Contenedor_Adentro3 {
+            margin: -54px 457px;
+        }
+
+        .botones {
+            margin: 20px 612px;
+        }
+
+        a.btn.btn-success {
+            margin: 20px -612px;
+        }
+
+        form#formBuscar {
+            border-style: solid;
+            border-width: medium;
+            padding: 21px 59px 1px;
+            margin: 5px 2px 12px 1px;
+            background-color: wheat;
+        }
+
+       
+
+        a.btn.btn-success {
+            margin: 0px -2px;
+            padding: 12px 12px -1px;
+        }
+
+        button.btn.btn-info {
+            margin: -71px -2px 10px -134px;
+        }
+
+        button.btn.btn-secondary {
+            margin: -71px -2px 10px -9px;
+        }
+
+        .Nuevo {
+            margin: -24px 13px;
+            color: #fff;
+            background-color: #198754;
+            border-color: #198754;
+            padding: -1px 7px 9px 1px;
+        }
+
+        form#formBuscar {
+            border-style: solid;
+            border-width: medium;
+            padding: 32px 72px 40px;
+            margin: 8px 2px 22px 1px;
+            background-color: wheat;
+        }
+
+        .h4Editar {
+            font-family: 'Slabo 27px', serif;
+            font-size: 46px;
+            height: 29px;
+            text-align: center;
+        }
+
+        button.btn.btn-secondary {
+            padding: 6px;
+        }
+
+        .btn-group.col-2 {
+            padding: 0 0 66px 49px;
+            margin: 20px 718px;
+        }
+
+        .btn-group.col-2 {
+            padding: 4px 34px -11px 24px;
+            margin: 15px 743px;
+        }
+
+        .btn-group.col-2 {
+            margin: 19px 52px -74px 719px;
+            padding: 0px 16px 56px 59px;
+        }
+
+    </style>
+
+</head>
+<h4 class="h4Editar">Tipo Usuario</h4>
+<hr/>
 <form asp-action="Index" method="post" id="formBuscar" class="row">
     <div class="form-group col-10">
         <label class="form-label">Buscar:</label>
@@ -18,9 +119,13 @@
         <button type="submit" class="btn btn-info">Filtrar</button>
         <button type="button" class="btn btn-secondary" onclick="limpiar()">Limpiar</button>
     </div>
+   
 </form>
-<table class="table">
-    <thead>
+<p>
+    <a asp-action="Insertar">Create New</a>
+</p>
+<table class="table table-striped">
+    <thead class="table-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.id)

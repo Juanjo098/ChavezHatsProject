@@ -1,0 +1,104 @@
+﻿@model IEnumerable<ProyectoFinal.Clases.Consultas.UsuarioCONS>
+
+@{
+    ViewData["Title"] = "Index";
+    List<SelectListItem> usuarios = ViewBag.usuarios;
+    int usuario = ViewBag.usuario == null ? 0 : ViewBag.usuario; 
+}
+<head>
+    <style>
+        select#busqueda {
+            margin: 0;
+            width: 572px;
+        }
+
+        .btn-group, .btn-group-vertical {
+            padding: 1px 26px 10px 611px;
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            margin: -44px 5px -1px 3px;
+        }
+    </style>
+</head>
+<h4 class="h4Editar">Usuario</h4>
+
+<hr />
+
+<!--
+<p>
+    <a asp-action="Create">Create New</a>hgg
+</p>
+-->
+<form asp-action="Index" class="form" method="post">
+    <div class="form-group">
+        <label class="form-label">Buscar por:</label>
+        <select name="busqueda" asp-items="@usuarios" class="form-select" id="busqueda"></select>
+    </div>
+    <div class="btn-group">
+    <button class="btn btn-info" type="submit">Buscar</button>
+    <button type="button" class="btn btn-light" onclick="limpiar()">Limpiar</button>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contrasena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipoUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.correo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.contrasena)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tipoUsuario)
+                </td>
+                <td>
+                    <a class="btn btn-light" id="detalles" onclick="detalles(@item.id)">
+                        <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="btn btn-warning" id="editar" onclick="editar(@item.id)">
+                        <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="btn btn-danger" id="eliminar" onclick="eliminar(@item.id)">
+                        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script src="~/js/gestion.js"></script>
+<script src="~/js/alerts.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("busqueda").value = @usuario;
+    })
+</script>

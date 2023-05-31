@@ -34,32 +34,99 @@
         resorte = 0;
 }
 
-<h1>Index</h1>
+<head>
+<style>
+        select#idToquilla {
+            padding: 4px 0px 0px 6px;
+            height: 27px;
+            width: 138px;
+        }
+
+        select#idForro {
+            padding: 4px 0px 0px 6px;
+            height: 27px;
+            width: 138px;
+        }
+        
+        select#idBarbiquejo {
+            padding: 4px 0px 0px 6px;
+            height: 27px;
+            width: 138px;
+        }
+
+        
+        select#idTafiretes {
+            padding: 4px 0px 0px 6px;
+            height: 27px;
+            width: 138px;
+        }
+
+        .Contenedor_Adentro {
+            margin: -54px 154px;
+        }
+
+        .Contenedor_Adentro2 {
+            margin: 0px 306px;
+        }
+
+        .Contenedor_Adentro3 {
+            margin: -54px 457px;
+        }
+
+        .botones {
+            margin: 20px 612px;
+        }
+
+        a.btn.btn-success {
+            margin: 20px -612px;
+        }
+
+        form#formBuscar {
+            border-style: solid;
+            border-width: medium;
+            padding: 21px 59px 1px;
+            margin: 5px 2px 12px 1px;
+            background-color: wheat;
+        }
+
+        a.btn.btn-success {
+            margin: 0px -2px;
+            padding: 12px 12px -1px;
+        }
+    </style>
+
+</head>
+
+<div class="Contenedor">   
 <form asp-action="Index" method="post" class="form" id="formBuscar">
-    <div class="form-group">
+    
         <label class="form-label">@Html.DisplayNameFor(model => model.toquilla)</label>
-        <select asp-items="@toquillas" name="idToquilla" id="idToquilla"></select>
-    </div>
-    <div class="form-group">
+        <select asp-items="@toquillas" name="idToquilla" id="idToquilla" class="form-select"></select>
+   
+      <div class="Contenedor_Adentro">
         <label class="form-label">@Html.DisplayNameFor(model => model.forro)</label>
-        <select asp-items="@forros" name="idForro" id="idForro"></select>
-    </div>
-    <div class="form-group">
+        <select asp-items="@forros" name="idForro" id="idForro" class="form-select"></select>
+       </div>
+        <div class="Contenedor_Adentro2">
         <label class="form-label">@Html.DisplayNameFor(model => model.barbiquejo)</label>
-        <select asp-items="@barbiquelos" name="idBarbiquejo" id="idBarbiquejo"></select>
-    </div>
-    <div class="form-group">
+        <select asp-items="@barbiquelos" name="idBarbiquejo" id="idBarbiquejo" class="form-select"></select>
+        </div>
+        <div class="Contenedor_Adentro3">
         <label class="form-label">@Html.DisplayNameFor(model => model.tafiretes)</label>
-        <select asp-items="@tafiretes" name="idTafiretes" id="idTafiretes"></select>
-    </div>
+        <select asp-items="@tafiretes" name="idTafiretes" id="idTafiretes" class="form-select"></select>
+        </div>
+<div class="botones"> 
     <div class="btn-group">
         <button type="submit" class="btn btn-info">Filtrar</button>
         <button type="button" class="btn btn-secondary" onclick="limpiarMaterial()">Limpiar</button>
+               
+        <p>
+                    <a asp-action="Insertar" class="btn btn-success">Insertar</a>
+                </p>
     </div>
+
 </form>
-<p>
-    <a asp-action="Insertar" class="btn btn-success">Insertar</a>
-</p>
+</div>
 <table class="table table-striped">
     <thead class="table-dark">
         <tr>
@@ -127,6 +194,7 @@
         }
     </tbody>
 </table>
+
 <form asp-action="Detalles" id="formDetalles" method="post">
     <input type="hidden" name="id" id="idDetalles">
 </form>

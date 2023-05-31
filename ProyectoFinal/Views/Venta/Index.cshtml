@@ -1,0 +1,218 @@
+﻿@model IEnumerable<ProyectoFinal.Clases.Consultas.VentaCONS>
+
+@{
+    ViewData["Title"] = "Index";
+    DateTime fechaFinal = ViewBag.fechaFinal == null ? DateTime.Now : ViewBag.fechaFinal;
+    DateTime fechaInicio;
+    if (ViewBag.fechaInicio == null)
+    {
+        fechaInicio = fechaFinal.AddMonths(-1);
+        if (fechaInicio.Month == 12 && fechaFinal.Month == 1)
+        {
+            fechaInicio = new DateTime(fechaInicio.Year - 1, fechaInicio.Month, fechaInicio.Day);
+        }
+    }
+    else
+    {
+        fechaInicio = ViewBag.fechaInicio;
+    }
+}
+<head>
+    <style>
+        .Ventas {
+            border-style: solid;
+            border-width: medium;
+            padding: 25px 59px 16px 46px;
+            margin: 13px 2px 12px 0px;
+            background-color: wheat;
+        }
+
+        .col-6 {
+            flex: 0 0 auto;
+            width: 38%;
+        }
+
+
+        .btn-group-vertical>.btn, .btn-group>.btn {
+    position: relative;
+    flex: 1 1 auto;
+    height: 39px;
+    margin: 27px 64px 14px 15px;
+    padding: 0 0 0px 0px;
+}
+
+        .col-7 {
+    flex: 0 0 auto;
+    width: 36.333333%;
+}
+
+
+
+        .Ventascontiene {
+            border-style: solid;
+            padding: 11px 28px 11px 10px;
+            border-width: medium;
+            margin: 23px 1px 16px 0px;
+        }
+
+        [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+            cursor: pointer;
+            margin: -29px 19px 6px 83px;
+        }
+        h1 {
+            margin: 10px 25px -3px 10px;
+        }
+
+        .Ventascontiene {
+            border-style: solid;
+            padding: 13px 29px 11px 10px;
+            border-width: medium;
+            margin: 23px 632px 16px 0px;
+        }
+
+        .btn-group, .btn-group-vertical {
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            margin: -11px 6px 2px 551px;
+        }
+        .btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    margin: -11px 6px 2px 580px;
+}
+
+        .btn-group, .btn-group-vertical {
+            padding: 0 0 0 0px;
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            margin: -11px 6px 2px 580px;
+        }
+
+
+        .a {
+
+            margin: -6px 36px 15px 268px;
+
+        }
+
+
+        main.pb-3 {
+            margin: 61px 21px 202px 34px;
+        }
+
+
+    </style>
+</head>
+
+<div class="Ventas">
+
+    <form asp-action="Index" method="post" class="form row">
+    <div class="form-group col-6">
+        <label class="form-label">Fecha de inicio</label>
+        <input type="date" class="form-control" name="fechaInicio" id="fechaInicio" />
+    </div>
+    <div class="form-group col-7">
+        <label class="form-label">Fecha final</label>
+        <input type="date" class="form-control" name="fechaFinal" id="fechaFinal" />
+    </div>
+    <div class="a">
+
+ 
+    <div class="btn-group col-3">
+        <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+</form>
+
+    
+
+</div>
+
+<div class="Ventascontiene">
+    <h1>Ventas</h1>
+
+    <button class="btn btn-outline-success" onclick="exportar(3)">
+        <span>
+            Exportar a Excel
+        </span>
+    </button>
+</div>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <form asp-action="Exportar" id="frmReporte">
+            <th>
+                <input type="checkbox" checked name="propiedades" value="id" />
+                <input type="hidden" name="tipoReporte" id="tipoReporte" />
+            </th>
+            <th><input type="checkbox" checked name="propiedades" value="fecha" /></th>
+            <th><input type="checkbox" checked name="propiedades" value="total" /></th>
+            <th></th>
+            </form>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fecha)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.total)
+                </td>
+                <td>
+                    <a class="btn btn-light" id="detalles" onclick="detalles(@item.id)">
+                        <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                    </a>
+                    <a class="btn btn-danger" id="eliminar" onclick="eliminar(@item.id)">
+                        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<form asp-action="Detalles" id="formDetalles" method="post">
+    <input type="hidden" name="id" id="idDetalles">
+</form>
+<form asp-action="Eliminar" id="formEliminar" method="post">
+    <input type="hidden" name="id" id="idEliminar">
+</form>
+<script src="~/js/gestion.js"></script>
+<script src="~/js/alerts.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        console.log(@fechaInicio.ToString("yyyy-MM-dd"))
+        document.getElementById("fechaInicio").value = "@fechaInicio.ToString("yyyy-MM-dd")"
+        document.getElementById("fechaFinal").value = "@fechaFinal.ToString("yyyy-MM-dd")"
+    })
+    const eliminar = (id) => {
+        const form = document.getElementById('formEliminar')
+        document.getElementById('idEliminar').value = id
+        confirmacion("Eliminar venta", "Desea eliminar la venta?", "Venta eliminada", form)
+    }
+    const exportar = (id) => {
+        document.getElementById("tipoReporte").value = id
+        document.getElementById("frmReporte").submit()
+    }
+</script>

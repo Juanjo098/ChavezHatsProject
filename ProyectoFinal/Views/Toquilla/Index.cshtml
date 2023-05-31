@@ -14,11 +14,39 @@
         .separado {
             padding: 16px;
         }
+
+        .h4Editar {
+            font-family: 'Slabo 31px', serif;
+            font-size: 54px;
+            height: 60px;
+            text-align: center;
+        }
+
+        .titulo {
+            margin: 1px -116px;
+        }
+
+        .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            margin: -9px 0 -25px 0px;
+            background-color: #d4d4d4;
+            justify-content: space-between;
+        }
+
+
     </style>
 </head>
-<p>
 
-</p>
+
+
+<div class="titulo">
+    <b><h4 class="h4Editar">Toquilla</h4></b>
+</div>
+
+<hr/>
+
 <form asp-action="Index" method="post" id="formBuscar" class="row">
     <div class="form-group col-10">
         <label class="form-label">Buscar:</label>
@@ -36,8 +64,8 @@
 </p>
 <h1 class="separado"></h1>
 
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead class="table-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.id)

@@ -1,0 +1,44 @@
+﻿@model ProyectoFinal.Clases.Consultas.SombreroCONSD
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+<head>
+    <style>
+        body {
+            background-color: wheat;
+        }
+        .container {
+            max-width: 960px;
+            padding: 0 114px 24px 144px;
+            border-color: black;
+        }
+
+        .card.mb-3 {
+            border-style: solid;
+            border-width: medium;
+            border-color: black;
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="card mb-3">
+        <img src="~/img/@Model.imagen" class="card-img-top" alt="...">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.nomClase): @Model.nomClase</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.nomModelo): @Model.nomModelo</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.nomTalla): @Model.nomTalla</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.tamTalla): @Model.tamTalla</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.medFalda): @Model.medFalda</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.toquilla): @Model.toquilla</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.forro): @Model.forro</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.barbiquejo): @Model.barbiquejo</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.tafiretes): @Model.tafiretes</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.ojitos): @Model.ojitos</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.resorte): @Model.resorte</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.precio): $@Model.precio</li>
+            <li class="list-group-item">@Html.DisplayNameFor(model => model.stock): @Model.stock</li>
+        </ul>
+        <a class="btn btn-success">Añadir a carrito</a>
+    </div>
+</div>

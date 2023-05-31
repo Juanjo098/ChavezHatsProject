@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -22,14 +22,22 @@
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Home\Privacy.cshtml" />
     <None Include="Views\IniciarSesion\Index.cshtml" />
+    <None Include="Views\Material\Detalles.cshtml" />
+    <None Include="Views\Material\Editar.cshtml" />
+    <None Include="Views\Material\Index.cshtml" />
+    <None Include="Views\Material\Insertar.cshtml" />
     <None Include="Views\Modelo\Detalles.cshtml" />
     <None Include="Views\Modelo\Editar.cshtml" />
     <None Include="Views\Modelo\Index.cshtml" />
     <None Include="Views\Modelo\Insertar.cshtml" />
+    <None Include="Views\Producto\Detalles.cshtml" />
+    <None Include="Views\Producto\Index.cshtml" />
     <None Include="Views\Registrar\Index.cshtml" />
     <None Include="Views\Shared\Error.cshtml" />
     <None Include="Views\Shared\_Layout.cshtml" />
     <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\Sombrero\Detalles.cshtml" />
+    <None Include="Views\Sombrero\Index.cshtml" />
     <None Include="Views\Tafirete\Detalles.cshtml" />
     <None Include="Views\Tafirete\Editar.cshtml" />
     <None Include="Views\Tafirete\Index.cshtml" />
@@ -45,9 +53,63 @@
     <None Include="Views\Usuario\Detalles.cshtml" />
     <None Include="Views\Usuario\Editar.cshtml" />
     <None Include="Views\Usuario\Index.cshtml" />
+    <None Include="Views\Venta\Detalles.cshtml" />
+    <None Include="Views\Venta\Index.cshtml" />
+    <None Include="Views\Views\Barbiquejo\Detalles.cshtml" />
+    <None Include="Views\Views\Barbiquejo\Editar.cshtml" />
+    <None Include="Views\Views\Barbiquejo\Index.cshtml" />
+    <None Include="Views\Views\Barbiquejo\Insertar.cshtml" />
+    <None Include="Views\Views\Clase\Detalles.cshtml" />
+    <None Include="Views\Views\Clase\Editar.cshtml" />
+    <None Include="Views\Views\Clase\Index.cshtml" />
+    <None Include="Views\Views\Clase\Insertar.cshtml" />
+    <None Include="Views\Views\Forro\Detalles.cshtml" />
+    <None Include="Views\Views\Forro\Editar.cshtml" />
+    <None Include="Views\Views\Forro\Index.cshtml" />
+    <None Include="Views\Views\Forro\Insertar.cshtml" />
+    <None Include="Views\Views\Home\Index.cshtml" />
+    <None Include="Views\Views\Home\Privacy.cshtml" />
+    <None Include="Views\Views\IniciarSesion\Index.cshtml" />
+    <None Include="Views\Views\Material\Detalles.cshtml" />
+    <None Include="Views\Views\Material\Editar.cshtml" />
+    <None Include="Views\Views\Material\Index.cshtml" />
+    <None Include="Views\Views\Material\Insertar.cshtml" />
+    <None Include="Views\Views\Modelo\Detalles.cshtml" />
+    <None Include="Views\Views\Modelo\Editar.cshtml" />
+    <None Include="Views\Views\Modelo\Index.cshtml" />
+    <None Include="Views\Views\Modelo\Insertar.cshtml" />
+    <None Include="Views\Views\Producto\Detalles.cshtml" />
+    <None Include="Views\Views\Producto\Index.cshtml" />
+    <None Include="Views\Views\Registrar\Index.cshtml" />
+    <None Include="Views\Views\Shared\Error.cshtml" />
+    <None Include="Views\Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\Views\Sombrero\Detalles.cshtml" />
+    <None Include="Views\Views\Sombrero\Index.cshtml" />
+    <None Include="Views\Views\Tafirete\Detalles.cshtml" />
+    <None Include="Views\Views\Tafirete\Editar.cshtml" />
+    <None Include="Views\Views\Tafirete\Index.cshtml" />
+    <None Include="Views\Views\Tafirete\Insertar.cshtml" />
+    <None Include="Views\Views\TipoUsuario\Detalles.cshtml" />
+    <None Include="Views\Views\TipoUsuario\Editar.cshtml" />
+    <None Include="Views\Views\TipoUsuario\Index.cshtml" />
+    <None Include="Views\Views\TipoUsuario\Insertar.cshtml" />
+    <None Include="Views\Views\Toquilla\Detalles.cshtml" />
+    <None Include="Views\Views\Toquilla\Editar.cshtml" />
+    <None Include="Views\Views\Toquilla\Index.cshtml" />
+    <None Include="Views\Views\Toquilla\Insertar.cshtml" />
+    <None Include="Views\Views\Usuario\Detalles.cshtml" />
+    <None Include="Views\Views\Usuario\Editar.cshtml" />
+    <None Include="Views\Views\Usuario\Index.cshtml" />
+    <None Include="Views\Views\_ViewImports.cshtml" />
+    <None Include="Views\Views\_ViewStart.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EPPlus" Version="6.2.4" />
+    <PackageReference Include="itext7" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
